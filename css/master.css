@@ -1,0 +1,184 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {min-height: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a {color: #5ece18;}
+a:hover {color: #5ece18;}
+body {
+	font-family: Arial, Helvetica, Verdana, Sans-serif;
+	font-size: 14px;
+	color: #444444;
+	background: #FFFFFF;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	color: #93C47D;
+	margin-top: 57px;
+	padding-right: 31px;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	color: #93C47D;
+	text-align: left;
+}
+
+body.research h2{
+		font-family: Arial, Helvetica, Verdana, Sans-serif;
+	font-size: 16px;
+	color: #262225;
+	margin: 0;
+	padding: 0;
+	color: #E94F64;
+	text-align: left;
+}
+
+#content h2 {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+
+#content p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+#page-container {
+	width: 1040px;
+	margin: auto;
+	text-align: left;
+}
+#main-nav { height: 180px; }
+#main-nav dl {margin: 0; padding:  0;}
+/* IE5 Mac Hack \*/ 
+#main-nav { padding-left: 11px; } 
+/*/ 
+#main-nav { padding-left: 11px; overflow: hidden; } 
+/* End Hack */
+
+#main-nav dt a {
+	display: block;
+	height: 0px !important;
+	height /**/:49.6px; /* IE 5/Win hack */ 
+	padding: 49.6px 0 0 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+#main-nav dt#homepage a:hover {
+	background-position: 0 -50.5px;
+}
+#main-nav dt#research a:hover {
+	background-position: 0 -50.5px;
+}
+#main-nav dt#public a:hover {
+	background-position: 0 -50.5px;
+}
+#main-nav dt#contact a:hover {
+	background-position: 0 -50.6px;
+}
+
+#main-nav dt#homepage,
+#main-nav dt#homepage a { width: 140px; background-size: 133px; background-image: url(../images/icons/homepage_3d_AG.png); background-repeat: no-repeat;}
+
+#main-nav dt#research,
+#main-nav dt#research a { width: 140px; background-size: 133px; background-image: url(../images/icons/research_AG.png); background-repeat: no-repeat; }
+
+#main-nav dt#public,
+#main-nav dt#public a { width: 140px; background-size: 133px; background-image: url(../images/icons/publication_AG.png); background-repeat: no-repeat; }
+
+#main-nav dt#contact,
+#main-nav dt#contact a { width: 140px; background-size: 133px; background-image: url(../images/icons/contact_v2_AG.png); background-repeat: no-repeat; }
+
+body.homepage dt#homepage,
+body.homepage dt#homepage a,
+body.homepage dt#homepage a:hover,
+body.research dt#research,
+body.research dt#research a,
+body.research dt#research a:hover,
+body.public dt#public,
+body.public dt#public a,
+body.public dt#public a:hover,
+body.contact dt#contact,
+body.contact dt#contact a,
+body.contact dt#contact a:hover {
+	background-position: 0 -101px;
+}
+
+body.homepage #header,
+body.research #header,
+body.public #header,
+body.contact #header {
+	height: 20px;
+	background: #ffffff
+			url(../images/figs/research_hh.png)
+}
+
+.news li { margin-bottom: 10px; 
+	font-size: 1em; 
+	line-height: 1.4em;
+	text-align: left;}
+.news li a {
+	font-size: 1em;
+	line-height: 1em;
+	text-decoration: none;
+	color: #db6d16;
+}
+.news li a:hover {color: #e5c454;}
+#sidebar {
+	/*background: url(img/bg1.jpg) no-repeat right top;
+	background-size: 50%;*/
+	/*background: url(img/bg1.jpg) no-repeat top right;*/
+	padding-top: 0px;
+	float: right;
+	width: 300px;
+}
+#sidebar p {
+	text-align: left;
+}
+#sidebar .padding {
+	padding: 25px;
+}
+.date {
+	color: #52D273;
+}
+
+#content {
+	margin-right: 300px;
+	line-height: 18px;
+}
+#content .padding {
+	padding: 25px;
+}
+#footer {
+	clear: both;
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;
+	font-size: 10px;
+	color: #c9c9c9;
+	border-top: 1px solid #efefef;
+	padding: 13px 25px;
+	line-height: 18px;
+}
+#footer a {
+	color: #c9c9c9;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #db6d16;
+}
+#footer #altnav {
+	width: 300px;
+	float: right;
+	text-align: right;
+}

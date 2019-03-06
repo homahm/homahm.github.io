@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117744444-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117744444-1');
+</script>
+<style type="text/css" media="all">@import "css/master.css";</style>  <style type="text/css" media="all">@import "css/master.css";</style>
+<title>Amir Ghasemian</title>
+
+<script language="javascript">
+ScrollRate = 100;
+
+function scrollDiv_init() {
+	DivElmnt = document.getElementById('news');
+	ReachedMaxScroll = false;
+	
+	DivElmnt.scrollTop = 0;
+	PreviousScrollTop  = 0;
+	
+	ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
+
+
+
+function scrollDiv() {
+	
+	if (!ReachedMaxScroll) {
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop++;
+		
+		ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+	}
+	else {
+    
+        DivElmnt.scrollTop = 0;
+        PreviousScrollTop  = 0;
+        
+        ReachedMaxScroll = false;
+	}
+}
+
+function pauseDiv() {
+	clearInterval(ScrollInterval);
+}
+
+function resumeDiv() {
+	PreviousScrollTop = DivElmnt.scrollTop;
+	ScrollInterval    = setInterval('scrollDiv()', ScrollRate);
+}
+</script>
+
+</head>
+
+<body class="public" onLoad="scrollDiv_init()">
+		<div id="sidebar">
+			<div class="padding">
+				<div id="main-nav">
+					<dl>
+						<dt id="homepage"><a href="index.html" target="_parent">Homepage</a></dt>
+						<dt id="research"><a href="research.html" target="_parent">Research</a></dt>
+						<dt id="public"><a href="public.html" target="_parent">Publications</a></dt>
+						<dt id="contact"><a href="contact.html" target="_parent">Contact</a></dt>
+					</dl>
+				</div>
+		        <br><br>
+		        <h2>News</h2>
+		        <br>
+		        <div class="news" id="news" style="overflow:auto;height:200px" onMouseOver="pauseDiv()" onMouseOut="resumeDiv()">
+					<ul>
+			        <li> <span class="date">12-15 July 2018</span> I'll be presenting my work on evaluating overfit and underfit in models of network community structure at <a href="https://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2018.aspx" target="_blank">IC2S2</a> in Chicago, IL.</li>
+			        <li> <span class="date">7 June 2018</span> I'll be presenting my work on evaluating overfit and underfit in models of network community structure at <a href="http://www.siam.org/meetings/dm18/" target="_blank">SIAM Data Mining Minisymposium</a> in Denver, CO.</li>
+			        <li> <span class="date">28 Feb 2018</span> My new paper on evaluating overfit and underfit in models of network community structure is available on the <a href="https://arxiv.org/pdf/1802.10582.pdf" target="_blank">arXiv</a></li>
+			        </ul>
+		        </div>
+			        
+			</div>
+		</div>
+</body>
+
+</html>

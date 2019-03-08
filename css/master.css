@@ -8,10 +8,10 @@ html {min-height: 100%;}
 	margin: 0;
 	padding: 0;
 }
-a {color: #5ece18;}
-a:hover {color: #5ece18;}
+a {color: #444444;}
+a:hover {color: #5676e2;}
 body {
-	font-family: Arial, Helvetica, Verdana, Sans-serif;
+	font-family: Helvetica, Arial, Verdana, Sans-serif;
 	font-size: 14px;
 	color: #444444;
 	background: #FFFFFF;
@@ -23,24 +23,24 @@ body {
 h1 {
 	margin: 0;
 	padding: 0;
-	color: #93C47D;
+	color: #56bce2;
 	margin-top: 57px;
 	padding-right: 31px;
 }
 h2 {
 	margin: 0;
 	padding: 0;
-	color: #93C47D;
+	color: ##bce256;
 	text-align: left;
 }
 
 body.research h2{
 		font-family: Arial, Helvetica, Verdana, Sans-serif;
 	font-size: 16px;
-	color: #262225;
+	color: ##bce256;
 	margin: 0;
 	padding: 0;
-	color: #E94F64;
+	color: ##bce256;
 	text-align: left;
 }
 
@@ -90,16 +90,16 @@ body.research h2{
 }
 
 #main-nav dt#homepage,
-#main-nav dt#homepage a { width: 140px; background-size: 133px; background-image: url(../images/icons/homepage_3d_AG.png); background-repeat: no-repeat;}
+#main-nav dt#homepage a { width: 140px; background-size: 133px; background-image: url(../images/icons/home.png); background-repeat: no-repeat;}
 
 #main-nav dt#research,
-#main-nav dt#research a { width: 140px; background-size: 133px; background-image: url(../images/icons/research_AG.png); background-repeat: no-repeat; }
+#main-nav dt#research a { width: 140px; background-size: 133px; background-image: url(../images/icons/research.png); background-repeat: no-repeat; }
 
 #main-nav dt#public,
-#main-nav dt#public a { width: 140px; background-size: 133px; background-image: url(../images/icons/publication_AG.png); background-repeat: no-repeat; }
+#main-nav dt#public a { width: 140px; background-size: 133px; background-image: url(../images/icons/publication.png); background-repeat: no-repeat; }
 
 #main-nav dt#contact,
-#main-nav dt#contact a { width: 140px; background-size: 133px; background-image: url(../images/icons/contact_v2_AG.png); background-repeat: no-repeat; }
+#main-nav dt#contact a { width: 140px; background-size: 133px; background-image: url(../images/icons/contact.png); background-repeat: no-repeat; }
 
 body.homepage dt#homepage,
 body.homepage dt#homepage a,
@@ -120,9 +120,9 @@ body.homepage #header,
 body.research #header,
 body.public #header,
 body.contact #header {
-	height: 20px;
+	height: 200px;
 	background: #ffffff
-			url(../images/figs/research_hh.png)
+			url(../images/figs/research_hh5.png)
 }
 
 .news li { margin-bottom: 10px; 
@@ -133,9 +133,9 @@ body.contact #header {
 	font-size: 1em;
 	line-height: 1em;
 	text-decoration: none;
-	color: #db6d16;
+	color: #d7c3cd;
 }
-.news li a:hover {color: #e5c454;}
+.news li a:hover {color: #F08080;}
 #sidebar {
 	/*background: url(img/bg1.jpg) no-repeat right top;
 	background-size: 50%;*/
@@ -145,13 +145,13 @@ body.contact #header {
 	width: 300px;
 }
 #sidebar p {
-	text-align: left;
+	text-align: right;
 }
 #sidebar .padding {
 	padding: 25px;
 }
 .date {
-	color: #52D273;
+	color: #d7c3cd;
 }
 
 #content {

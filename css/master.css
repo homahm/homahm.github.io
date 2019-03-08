@@ -90,16 +90,16 @@ body.research h2{
 }
 
 #main-nav dt#homepage,
-#main-nav dt#homepage a { width: 140px; background-size: 133px; background-image: url(../images/icons/home.png); background-repeat: no-repeat;}
+#main-nav dt#homepage a { width: 140px; background-size: 133px; background-image: url(../images/icons/home3.png); background-repeat: no-repeat;}
 
 #main-nav dt#research,
-#main-nav dt#research a { width: 140px; background-size: 133px; background-image: url(../images/icons/research.png); background-repeat: no-repeat; }
+#main-nav dt#research a { width: 140px; background-size: 133px; background-image: url(../images/icons/research3.png); background-repeat: no-repeat; }
 
 #main-nav dt#public,
-#main-nav dt#public a { width: 140px; background-size: 133px; background-image: url(../images/icons/publication.png); background-repeat: no-repeat; }
+#main-nav dt#public a { width: 140px; background-size: 133px; background-image: url(../images/icons/publication3.png); background-repeat: no-repeat; }
 
 #main-nav dt#contact,
-#main-nav dt#contact a { width: 140px; background-size: 133px; background-image: url(../images/icons/contact.png); background-repeat: no-repeat; }
+#main-nav dt#contact a { width: 140px; background-size: 133px; background-image: url(../images/icons/contact3.png); background-repeat: no-repeat; }
 
 body.homepage dt#homepage,
 body.homepage dt#homepage a,

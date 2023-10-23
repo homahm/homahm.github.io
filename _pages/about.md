@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href="https://css.seas.upenn.edu/project/penn-map/">Computational Social Science Lab at Penn</a>
 
 profile:
   align: right

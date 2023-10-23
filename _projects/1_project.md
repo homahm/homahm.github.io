@@ -2,7 +2,7 @@
 layout: page
 title: Our Shared Reality
 description: Information Ecosystem - Mainstream
-img: assets/img/12.jpg
+img: assets/img/sharerealityproject.png
 importance: 1
 category: work
 related_publications: einstein1956investigations, einstein1950meaning

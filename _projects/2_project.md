@@ -5,6 +5,7 @@ description: Auditing sociotechnical systems
 img: assets/img/ytpnas.jpg
 importance: 2
 category: work
+related_publications: hosseinmardi2023causally, hosseinmardi2021examining, horta2023deplatforming
 ---
 
 One of the most puzzling questions about online platforms for me has been whether what we observe on platforms such as Instagram or YouTube

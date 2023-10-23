@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented my study of YouTube recommendation system in Google NYC!
+I had the privilege of presenting my research on the study of YouTube recommendation system at Google's New York City office!

@@ -5,4 +5,9 @@ inline: true
 related_posts: false
 ---
 
-Invited speaker for WiDS 2023!
+I'm excited to share that I'll be a speaker at the upcoming <a href="https://analytics.wharton.upenn.edu/research/impact-analytics/women-in-data-science-penn-conference-2023/">Women in Data Science</a>
+ event at University of Pennsylvania! I'm looking forward to the opportunity to share insights, knowledge, and experiences in the field of data science. My sincere thanks to the organizers for this upcoming opportunity!
+
+
+
+

@@ -5,7 +5,7 @@ description: Information ecosystem - mainstream
 img: assets/img/sharerealityproject.png
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
+related_publications: hosseinmardi2023sharereality, muise2022quantifying
 ---
 
 Television is the dominant source of news for most Americans and has traditionally provided the U.S. with a shared reality: a common set of facts and perspectives about a common set of issues. Here we show that this source of shared reality is diminishing, but not in the way most observers fear. First, the major cable networks (CNN, FNC, MSNBC) have indeed diverged from each other and from the major broadcast networks (ABC, CBS, NBC), covering different topics with different language; however, broadcast news remains relatively homogeneous. Second, the audience of majority broadcast news consumers has declined substantially, mostly due to an overall exodus from news consumption, but continues to dominate the corresponding audience for cable. 

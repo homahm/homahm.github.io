@@ -9,18 +9,35 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Computational Social Science Lab</p>
+    <p>University of Pennsylvaia</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a computational social scientist with a computer science background focused on the study of auding sociotechnical
+systems and in general information ecosystem. Motivated by the high impact of these real-world issues in our daily lives, my research revolves around AI for Social Good, with a major focus on evaluating the scale and dynamics of problems of societal importance. The overarching theme of my work is
+utilizing computational tools—machine learning, natural language processing, complex network analysis, and statistical and causal
+inference—to extract actionable and interpretable insights from data, typically with very little or no supervision. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+<h1>My Research</h1> 
+<br>
+<p style="text-align:justify">
+My work is
+inherently interdisciplinary and I collaborate closely with sociologists, economists, political scientists, and psychologists. One of the
+most puzzling questions about online platforms for me has been whether what we observe on platforms such as Instagram or YouTube
+is more a result of the platform design, e.g., its algorithms, or a reflection of society through the lens of the platform. It is hard to
+answer which, but it is easy to forget about the role of human behavior when it comes to technology’s disturbing consequences.
+
+
+General features of my work on the study of digital technologies include carefully considering the whole spectrum from pure user
+intention to pure platform design, performing cross-platform analysis, and putting observations into context when studying
+complex systems. Over the years, my research has been featured in the press and published in more than 30 peer-reviewed papers,
+including computer science conferences and top journals such as PNAS, Science Advances, TKDE, and IMWUT.
+</p>
+<br>

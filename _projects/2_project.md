@@ -1,7 +1,7 @@
 ---
 layout: page
 title: responsible AI
-description: Auting sociotechincal systems
+description: Auditing sociotechnical systems
 img: assets/img/ytpnas.jpg
 importance: 2
 category: work

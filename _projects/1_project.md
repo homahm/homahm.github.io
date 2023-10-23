@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Our Shared Reality
-description: Information Ecosystem - Mainstream
+description: Information ecosystem - mainstream
 img: assets/img/sharerealityproject.png
 importance: 1
 category: work

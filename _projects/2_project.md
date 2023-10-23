@@ -1,25 +1,19 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: responsible AI
+description: Auting sociotechincal systems
+img: assets/img/ytpnas.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+One of the most puzzling questions about online platforms for me has been whether what we observe on platforms such as Instagram or YouTube
+is more a result of the platform design, e.g., its algorithms, or a reflection of society through the lens of the platform. It is hard to
+answer which, but it is easy to forget about the role of human behavior when it comes to technology’s disturbing consequences.
+General features of my work on the study of digital technologies include carefully considering the whole spectrum from pure user
+intention to pure platform design, performing cross-platform analysis, and putting observations into context when studying
+complex systems.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

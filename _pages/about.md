@@ -18,9 +18,9 @@ social: true  # includes social icons at the bottom of the page
 
 
 I am a computational social scientist with a computer science background focused on the auditing sociotechnical
-systems and in general information ecosystem. 
+systems and in general information ecosystem. What we observe as uers experience on platforms is a complex interaction of society and technology. 
 General features of my work on the study of digital technologies include carefully considering the whole spectrum from pure user
-intention to pure platform design, performing cross-platform analysis, and putting observations into context when studying
+intention to pure platform design</strong>, <strong>performing cross-platform analysis</strong>, and <strong>putting observations into context</strong> when studying
 complex systems. 
 
 

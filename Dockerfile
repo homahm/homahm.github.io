@@ -3,6 +3,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 Label MAINTAINER Amir Pourmand
 
+# Install Node.js 20
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+RUN apt-get install -y nodejs
+
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     locales \
     imagemagick \

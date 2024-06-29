@@ -7,6 +7,10 @@ nav: true
 nav_order: 5
 ---
 
+* “Does YouTube's Algorithm Radicalize Young Americans? New Study Has Answers” (February 24, 2024) — TechTimes.
+
+* “The YouTube algorithm isn’t radicalizing people.” (February 20, 2024) — Featured in Penn Today.
+
 * “Cable News Confusion” (September 27, 2022) — Research presented in talk at PolitiFact’s virtual United
 Facts of America conference.
 

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Affiliation <a href="https://css.seas.upenn.edu/project/penn-map/">Computational Social Science Lab at Penn</a>
+subtitle: Affiliation <a href="https://comm.ucla.edu/people/faculty/professors/">UCLA</a>
 
 profile:
   align: right

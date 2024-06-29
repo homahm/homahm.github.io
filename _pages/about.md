@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Affiliation <a href="https://comm.ucla.edu/people/faculty/professors/">UCLA</a>
+subtitle: Affiliation <a href="https://comm.ucla.edu/people/faculty/professors/">University of California, Los Angeles</a>
 
 profile:
   align: right

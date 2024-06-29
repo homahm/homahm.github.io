@@ -22,9 +22,6 @@ systems and in general information ecosystem. What we observe as uers experience
 General features of my work on the study of digital technologies include carefully considering the whole spectrum from <strong>pure user
 intention to pure platform design</strong>, <strong>performing cross-platform analysis</strong>, and <strong>putting observations into context</strong> when studying
 complex systems. 
-
-
-I am in the job market for opportunities in the research industry and for tenure-track faculty positions!
  
 
 

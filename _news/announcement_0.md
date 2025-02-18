@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Upcoming talks: American Museum of Natural History, NYC; NYU, Abu Dhabi; CSS Summer School, UCLA.
+Upcoming talks: CSS Summer School, UCLA.

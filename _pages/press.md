@@ -7,6 +7,12 @@ nav: true
 nav_order: 5
 ---
 
+* “To Create Boundaries With Social Media, We Must Understand How It Affects Us,” Interviewed by Kirsten Brehmer (March 9, 2025) - Daily Bruin.
+
+* The YouTube Algorithm Isn’t Radicalizing People: Why User Choice Matters on Social Media, Knowledge at Wharton (April 2024). 
+
+* Estimating the Effect of YouTube Recommendations with Homa Hosseinmardi, Research Spotlight —Featured in Wharton Women in Analytics (March 2024).
+
 * “Does YouTube's Algorithm Radicalize Young Americans? New Study Has Answers” (February 24, 2024) — TechTimes.
 
 * “The YouTube algorithm isn’t radicalizing people.” (February 20, 2024) — Featured in Penn Today.

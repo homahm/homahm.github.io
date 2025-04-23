@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: Research Assistances
+group: Research Assistants
 group_rank: 3
 group_order: 1
 external: True

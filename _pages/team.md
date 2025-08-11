@@ -26,7 +26,7 @@ nav_rank: 2
   /* ===== Research Assistants: compact grid, 4 per row, text under photo ===== */
   .group-container.ra{
     display:grid;
-    grid-template-columns:repeat(4,minmax(0,1fr));
+    grid-template-columns:repeat(3,minmax(0,1fr));
     gap:.75rem;
   }
   .group-container.ra > .group-heading{

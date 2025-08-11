@@ -40,7 +40,7 @@ nav_rank: 2
   .group-container.ra img.card-img,
   .group-container.ra img.img-fluid{
     width:100%;
-    height:80px;
+    height:100px;
     object-fit:cover;
     border-radius:.5rem .5rem 0 0;
     display:block;
@@ -52,48 +52,30 @@ nav_rank: 2
   @media (max-width:991.98px){ .group-container.ra{ grid-template-columns:repeat(3,1fr); } }
   @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
 
-  /* ===== Former Lab Members: 6 per row, small photo + name only ===== */
-.group-container.former-members{
-  display:grid;
-  grid-template-columns:repeat(6,minmax(0,1fr));
-  gap:.75rem;
-}
-.group-container.former-members > .group-heading{
-  grid-column:1 / -1;
-  margin-bottom:.5rem;
-}
-.group-container.former-members .mini-card{
-  margin:0;
-  padding:0;
-  text-align:center;
-  border:none;
-  box-shadow:none;
-  background:transparent;
-}
-.group-container.former-members .mini-img{
-  width:100%;
-  height:45px;          /* smaller photo height */
-  object-fit:cover;
-  border-radius:.5rem;
-  display:block;
-}
-.group-container.former-members .mini-name{
-  font-size:.75rem;     /* smaller font size for name */
-  margin-top:.3rem;
-  font-weight:500;
-  line-height:1.1;
-}
-/* responsive for Former Lab Members */
-@media (max-width:991.98px){ .group-container.former-members{ grid-template-columns:repeat(4,1fr); } }
-@media (max-width:575.98px){ .group-container.former-members{ grid-template-columns:repeat(3,1fr); } }
+  /* ===== Former Lab Members: 6 per row, small proportional image, name only ===== */
+  .group-container.former-members {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+  .group-container.former-members img.card-img,
+  .group-container.former-members img.img-fluid {
+    width: 100px;   /* smaller image width */
+    height: auto;   /* scale proportionally */
+    object-fit: contain;
+    border-radius: .5rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .group-container.former-members .card-body {
+    padding: 0.25rem 0 0;
+  }
+  .group-container.former-members .card-title {
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+  }
 </style>
-
-{% comment %}
-Special groups:
-- "Research Assistants": compact grid, 4 per row, stacked layout (your current setting).
-- "Former Lab Members": 6 per row, photo + name only (no position/teaser/icons).
-All other groups use the wide card layout unchanged.
-{% endcomment %}
 
 {% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}
 {% for group in groups %}
@@ -104,30 +86,21 @@ All other groups use the wide card layout unchanged.
     {% if group == 'Former Lab Members' %}former-members{% endif %}">
     <h2 class="group-heading">{{ group }}</h2>
 
-    {% if group == 'Former Lab Members' %}
-      {%- for member in members -%}
-        <div class="mini-card">
-          {% if member.inline == false %}
-            {% if member.external == true %}
-              <a href="{{ member.profile.website }}">
-            {% else %}
-              <a href="{{ member.url | relative_url }}">
-            {% endif %}
-          {% endif %}
-
+    {% for member in members %}
+      {% if group == 'Former Lab Members' %}
+        <!-- Former Lab Members: only photo + name -->
+        <div class="card team-card">
           <img
             src="{{ '/assets/img/team/' | append: member.profile.image | relative_url }}"
-            class="mini-img"
+            class="card-img img-fluid"
             alt="{{ member.profile.name }}"
           />
-          <div class="mini-name">{{ member.profile.name }}</div>
-
-          {% if member.inline == false %}</a>{% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ member.profile.name }}</h5>
+          </div>
         </div>
-      {%- endfor -%}
-
-    {% else %}
-      {% for member in members %}
+      {% else %}
+        <!-- Default layout for other groups -->
         <div class="card team-card {% if member.inline == false %}hoverable{% endif %}">
           <div class="row no-gutters">
             <div class="col-sm-4 col-md-3">
@@ -160,30 +133,11 @@ All other groups use the wide card layout unchanged.
                 {% endif %}
 
                 {% if member.inline == false %}</a>{% endif %}
-
-                {% if member.profile.email %}
-                  <a href="mailto:{{ member.profile.email }}" class="card-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                {% endif %}
-                {% if member.profile.phone %}
-                  <a href="tel:{{ member.profile.phone }}" class="card-link" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                {% endif %}
-                {% if member.profile.orcid %}
-                  <a href="https://orcid.org/{{ member.profile.orcid }}" class="card-link" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-                {% endif %}
-                {% if member.profile.twitter %}
-                  <a href="https://twitter.com/{{ member.profile.twitter }}" class="card-link" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                {% endif %}
-                {% if member.profile.github %}
-                  <a href="https://github.com/{{ member.profile.github }}" class="card-link" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                {% endif %}
-                {% if member.profile.website %}
-                  <a href="{{ member.profile.website }}" class="card-link" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
-                {% endif %}
               </div>
             </div>
           </div>
         </div>
-      {% endfor %}
-    {% endif %}
+      {% endif %}
+    {% endfor %}
   </div>
 {% endfor %}

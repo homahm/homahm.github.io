@@ -40,7 +40,7 @@ nav_rank: 2
   .group-container.ra img.card-img,
   .group-container.ra img.img-fluid{
     width:100%;
-    height:100px;
+    height:auto;
     object-fit:cover;
     border-radius:.5rem .5rem 0 0;
     display:block;

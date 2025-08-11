@@ -20,47 +20,49 @@ nav_rank: 2
     font-weight: bold;
   }
 
-  /* default (non-RA) cards (wide layout) */
+  /* default (non-RA) wide cards */
   .team-card { margin-bottom: 1rem; }
 
-  /* ===== Research Assistants: compact grid, 4 per row ===== */
-  .group-container.ra {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.75rem;
+  /* ===== Research Assistants: compact grid, 4 per row, text under photo ===== */
+  .group-container.ra{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:.75rem;
   }
-  .group-container.ra > .group-heading {
-    grid-column: 1 / -1; /* heading spans full width */
-    margin-bottom: 0.5rem;
-  }
-  .group-container.ra .team-card {
-    margin: 0;               /* grid gap handles spacing */
-    font-size: 0.9rem;       /* smaller text */
-  }
-  .group-container.ra .card-body { padding: 0.5rem 0.5rem 0.75rem; }
-  .group-container.ra .card-title { font-size: 1rem; margin-bottom: 0.25rem; }
-  .group-container.ra .card-subtitle { font-size: 0.85rem; }
-  .group-container.ra img.card-img,
-  .group-container.ra img.img-fluid {
-    width: 100%;
-    height: 150px;           /* compact thumbnail */
-    object-fit: cover;
-    border-radius: .5rem;
+  .group-container.ra > .group-heading{
+    grid-column:1 / -1;
+    margin-bottom:.5rem;
   }
 
-  /* Optional: make grid collapse nicely on small screens */
-  @media (max-width: 991.98px) { /* lg and down */
-    .group-container.ra { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  /* override wide card layout only inside RA */
+  .group-container.ra .team-card{ margin:0; font-size:.9rem; }
+  .group-container.ra .row.no-gutters{ display:block; }  /* stop side-by-side columns */
+  .group-container.ra .col-sm-4.col-md-3,
+  .group-container.ra .team.col-sm-8.col-md-9{ width:100%; max-width:100%; }
+
+  .group-container.ra img.card-img,
+  .group-container.ra img.img-fluid{
+    width:100%;
+    height:180px;                 /* thumbnail height */
+    object-fit:cover;
+    border-radius:.5rem .5rem 0 0;
+    display:block;
   }
-  @media (max-width: 575.98px) { /* xs */
-    .group-container.ra { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
+
+  .group-container.ra .card-body{ padding:.5rem .6rem .75rem; }
+  .group-container.ra .card-title{ font-size:1rem; margin-bottom:.25rem; }
+  .group-container.ra .card-subtitle{ font-size:.85rem; }
+  .group-container.ra .card-text{ font-size:.9rem; }
+
+  /* responsive: 3-up on md, 2-up on phones */
+  @media (max-width:991.98px){ .group-container.ra{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
 </style>
 
 {% comment %}
-Groups are discovered from the `group` field of each document in the `_members/` collection.
-We keep the original wide card layout for all groups. Only "Research Assistants" gets the compact grid.
-To target a different group name, change the string in the class toggle below.
+Groups are read from the `group:` field of documents in the `_members/` collection.
+Only the group named exactly "Research Assistants" is rendered compact (4 per row).
+Change that string below if you use a different label.
 {% endcomment %}
 
 {% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}

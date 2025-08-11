@@ -1,9 +1,9 @@
 ---
 layout: about
 inline: false
-group: Research Assistants
-group_rank: 3
-group_order: 5
+group: Former lab members
+group_rank: 4
+group_order: 1
 external: True
 
 title: Ovin Huang

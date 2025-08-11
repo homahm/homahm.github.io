@@ -26,7 +26,7 @@ nav_rank: 2
   /* ===== Research Assistants: compact grid, 4 per row, text under photo ===== */
   .group-container.ra{
     display:grid;
-    grid-template-columns:repeat(4,minmax(0,1fr));
+    grid-template-columns:repeat(5,minmax(0,1fr));
     gap:.75rem;
   }
   .group-container.ra > .group-heading{
@@ -62,10 +62,11 @@ nav_rank: 2
 
   /* Make the section header span the whole row */
   .group-container.former-members > .group-heading {
-    grid-column: 1 / -1;
-    margin-bottom: .5rem; /* space below header */
+  grid-column: 1 / -1;
+  margin-bottom: .5rem; /* space below header */
+  text-align: left; /* left align the header */
   }
-  
+
   .group-container.former-members img.card-img,
   .group-container.former-members img.img-fluid {
     width: 100px;   /* smaller image width */

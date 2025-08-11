@@ -53,39 +53,39 @@ nav_rank: 2
   @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
 
   /* ===== Former Lab Members: 6 per row, small photo + name only ===== */
-  .group-container.former-members{
-    display:grid;
-    grid-template-columns:repeat(6,minmax(0,1fr));
-    gap:.75rem;
-  }
-  .group-container.former-members > .group-heading{
-    grid-column:1 / -1;
-    margin-bottom:.5rem;
-  }
-  .group-container.former-members .mini-card{
-    margin:0;
-    padding:0;
-    text-align:center;
-    border:none;
-    box-shadow:none;
-    background:transparent;
-  }
-  .group-container.former-members .mini-img{
-    width:100%;
-    height:90px;          /* <-- adjust this to make photos smaller/bigger */
-    object-fit:cover;
-    border-radius:.5rem;
-    display:block;
-  }
-  .group-container.former-members .mini-name{
-    font-size:.9rem;
-    margin-top:.4rem;
-    font-weight:600;
-    line-height:1.2;
-  }
-  /* responsive for Former Lab Members */
-  @media (max-width:991.98px){ .group-container.former-members{ grid-template-columns:repeat(4,1fr); } }
-  @media (max-width:575.98px){ .group-container.former-members{ grid-template-columns:repeat(3,1fr); } }
+.group-container.former-members{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:.75rem;
+}
+.group-container.former-members > .group-heading{
+  grid-column:1 / -1;
+  margin-bottom:.5rem;
+}
+.group-container.former-members .mini-card{
+  margin:0;
+  padding:0;
+  text-align:center;
+  border:none;
+  box-shadow:none;
+  background:transparent;
+}
+.group-container.former-members .mini-img{
+  width:100%;
+  height:45px;          /* smaller photo height */
+  object-fit:cover;
+  border-radius:.5rem;
+  display:block;
+}
+.group-container.former-members .mini-name{
+  font-size:.75rem;     /* smaller font size for name */
+  margin-top:.3rem;
+  font-weight:500;
+  line-height:1.1;
+}
+/* responsive for Former Lab Members */
+@media (max-width:991.98px){ .group-container.former-members{ grid-template-columns:repeat(4,1fr); } }
+@media (max-width:575.98px){ .group-container.former-members{ grid-template-columns:repeat(3,1fr); } }
 </style>
 
 {% comment %}

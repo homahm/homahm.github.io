@@ -59,6 +59,13 @@ nav_rank: 2
     gap: 1rem;
     text-align: center;
   }
+
+  /* Make the section header span the whole row */
+  .group-container.former-members > .group-heading {
+    grid-column: 1 / -1;
+    margin-bottom: .5rem; /* space below header */
+  }
+  
   .group-container.former-members img.card-img,
   .group-container.former-members img.img-fluid {
     width: 100px;   /* smaller image width */

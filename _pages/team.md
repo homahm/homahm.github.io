@@ -20,7 +20,7 @@ nav_rank: 2
     font-weight: bold;
   }
 
-  /* default (non-RA) wide cards */
+  /* default (non-special) wide cards */
   .team-card { margin-bottom: 1rem; }
 
   /* ===== Research Assistants: compact grid, 4 per row, text under photo ===== */
@@ -33,43 +33,46 @@ nav_rank: 2
     grid-column:1 / -1;
     margin-bottom:.5rem;
   }
-
-  /* override wide card layout only inside RA */
   .group-container.ra .team-card{ margin:0; font-size:.9rem; }
-  .group-container.ra .row.no-gutters{ display:block; }  /* stop side-by-side columns */
+  .group-container.ra .row.no-gutters{ display:block; }
   .group-container.ra .col-sm-4.col-md-3,
   .group-container.ra .team.col-sm-8.col-md-9{ width:100%; max-width:100%; }
-
   .group-container.ra img.card-img,
   .group-container.ra img.img-fluid{
     width:100%;
-    height:180px;                 /* thumbnail height */
+    height:180px;
     object-fit:cover;
     border-radius:.5rem .5rem 0 0;
     display:block;
   }
-
   .group-container.ra .card-body{ padding:.5rem .6rem .75rem; }
   .group-container.ra .card-title{ font-size:1rem; margin-bottom:.25rem; }
   .group-container.ra .card-subtitle{ font-size:.85rem; }
   .group-container.ra .card-text{ font-size:.9rem; }
-
-  /* responsive: 3-up on md, 2-up on phones */
   @media (max-width:991.98px){ .group-container.ra{ grid-template-columns:repeat(3,1fr); } }
   @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
+
+  /* ===== Former Lab Members: smaller photo ===== */
+  .group-container.former-members img.card-img,
+  .group-container.former-members img.img-fluid {
+    height: 100px; /* smaller height */
+    object-fit: cover;
+  }
 </style>
 
 {% comment %}
-Groups are read from the `group:` field of documents in the `_members/` collection.
-Only the group named exactly "Research Assistants" is rendered compact (4 per row).
-Change that string below if you use a different label.
+Special groups:
+- "Research Assistants": compact grid, 4 per row, stacked layout.
+- "Former Lab Members": same wide layout, but photo height reduced by ~half.
 {% endcomment %}
 
 {% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}
 {% for group in groups %}
   {% assign members = site.members | sort: "group_order" | where: "group", group %}
 
-  <div class="group-container {% if group == 'Research Assistants' %}ra{% endif %}">
+  <div class="group-container
+    {% if group == 'Research Assistants' %}ra{% endif %}
+    {% if group == 'Former Lab Members' %}former-members{% endif %}">
     <h2 class="group-heading">{{ group }}</h2>
 
     {% for member in members %}
@@ -82,7 +85,6 @@ Change that string below if you use a different label.
               alt="{{ member.profile.name }}"
             />
           </div>
-
           <div class="team col-sm-8 col-md-9">
             <div class="card-body">
               {% if member.inline == false %}
@@ -125,13 +127,6 @@ Change that string below if you use a different label.
               {% if member.profile.website %}
                 <a href="{{ member.profile.website }}" class="card-link" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
               {% endif %}
-              {%- comment -%}
-              <!-- Address example if needed later:
-              <p class="card-text">
-                <small class="test-muted"><i class="fas fa-thumbtack"></i> {{ member.profile.address | replace: '<br />', ', ' }}</small>
-              </p>
-              -->
-              {%- endcomment -%}
             </div>
           </div>
         </div>

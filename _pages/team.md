@@ -86,7 +86,7 @@ nav_rank: 2
 {% comment %}
 Special groups:
 - Research Assistants → stacked 4-up layout.
-- Former lab members → mini stacked 5-up layout (name only).
+- Former Lab Members → mini stacked 5-up layout (name only).
 - Everything else → original wide card layout.
 {% endcomment %}
 

@@ -15,7 +15,7 @@ teaser: >
     I am a second-year Ph.D. student in Computer and Information Science at the University of Pennsylvania.
     
 profile:
-    name: Upasana Dutta
+    name: Upasana Dutta (Collaborator)
     position: Doctoral Student (UPenn)  
     align: right
     image: Dutta.jpg

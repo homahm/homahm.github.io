@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: Former lab members
+group: Former Lab Members
 group_rank: 4
 group_order: 1
 external: True

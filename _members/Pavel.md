@@ -18,10 +18,12 @@ profile:
     name: Pavel Savgira  (Collaborator)
     position: Doctoral Student 
     align: right
-    image: Pavel.jpg
+    image: Pavel.jpeg
     role: Doctoral Researcher
     email: savpal@ucla.edu
-    orcid: 
+    website: None
+    github: None
+    orcid: None 
     # address: >
 ---
 

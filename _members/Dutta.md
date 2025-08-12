@@ -3,7 +3,7 @@ layout: about
 inline: false
 group: Grad Students
 group_rank: 2
-group_order: 2
+group_order: 3
 external: True
 
 title: Upasana Dutta

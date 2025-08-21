@@ -18,7 +18,7 @@ profile:
     name: Christian Nielsen Garcia  (Collaborator)
     position: Doctoral Student 
     align: right
-    image: UCLA_HS_CNG.jpeg
+    image: UCLA_HS_CNG.jpg
     role: Doctoral Researcher
     email: ctng@g.ucla.edu
     website: None

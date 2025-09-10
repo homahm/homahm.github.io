@@ -18,7 +18,7 @@ profile:
     name: Olivia Nguyen
     position: B.S. in Statistics and Data Science
     align: right
-    image: Nguyen.PNG
+    image: Nguyen.jpeg
     role: Undergraduate Student
     orcid: 
     website: 

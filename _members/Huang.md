@@ -2,8 +2,8 @@
 layout: about
 inline: false
 group: Former Lab Members
-group_rank: 4
-group_order: 1
+group_rank: 3
+group_order: 6
 external: True
 
 title: Ovin Huang

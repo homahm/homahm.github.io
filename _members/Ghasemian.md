@@ -18,7 +18,7 @@ profile:
     name: Amir Ghasemian
     position: 
     align: right
-    image: Ghasemian.jpg
+    image: amir2.png
     role: research faculty
     email: amir.ghasemian@yale.edu
     website: https://aghasemian.github.io/

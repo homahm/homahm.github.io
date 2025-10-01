@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: Former Lab Members
+group: Research Assistants
 group_rank: 3
 group_order: 7
 external: True

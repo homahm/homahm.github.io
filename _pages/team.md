@@ -52,10 +52,10 @@ nav_rank: 2
   @media (max-width:991.98px){ .group-container.ra{ grid-template-columns:repeat(3,1fr); } }
   @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
 
-  /* ===== Former Lab Members: 6 per row, small proportional image, name only ===== */
+  /* ===== Former Lab Members: 4 per row, small proportional image, name only ===== */
   .group-container.former-members {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     text-align: center;
   }

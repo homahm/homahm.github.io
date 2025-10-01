@@ -18,7 +18,7 @@ profile:
     name: Vidusha Adira
     position:
     align: right
-    image: adira.png
+    image: adira2.png
     role: Undergraduate Student
     orcid: 
     website: 

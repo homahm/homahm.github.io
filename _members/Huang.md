@@ -12,7 +12,7 @@ lastname: Huang
 publications: 'author^=*Huang'
 
 teaser: >
-    My name is Ovin Huang, Mathematics department, majoring in math of computation. I am interested in statistical modeling, data science applications, and climate-related research.
+    I major in mathematics of computation, Mathematics department. I am interested in statistical modeling, data science applications, and climate-related research.
 
 profile:
     name: Ovin Huang

@@ -12,7 +12,7 @@ lastname: Rosskopf
 publications: 'author^=*Rosskopf'
 
 teaser: >
-    I'm Sean Rosskopf, a junior undergraduate student studying political science at UCLA.
+    I am a junior undergraduate student studying political science at UCLA.
 
 profile:
     name: Sean Rosskopf

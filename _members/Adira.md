@@ -12,7 +12,7 @@ lastname: Huang
 publications: 'author^=*Huang'
 
 teaser: >
-    My name is Vidusha Adira, and I’m a third year at UCLA, pursuing a B.S in Statistics and Data Science as well as a B.A. in Political Science.
+    I’m a third year at UCLA, pursuing a B.S in Statistics and Data Science as well as a B.A. in Political Science.
 
 profile:
     name: Vidusha Adira

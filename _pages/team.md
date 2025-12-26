@@ -3,10 +3,10 @@ layout: page
 permalink: /team.html
 title: OASIS lab
 page-title: Team
-description: Online and AI Systems’ Integrity & Safety
+description: Online and AI Systems' Integrity & Safety
 nav: true
-nav_order: 2
-nav_rank: 2
+nav_order: 1
+nav_rank: 1
 ---
 
 <style>
@@ -52,6 +52,63 @@ nav_rank: 2
   @media (max-width:991.98px){ .group-container.ra{ grid-template-columns:repeat(3,1fr); } }
   @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
 
+  /* ===== Co-founders: 2 per row, equal images with equal spacing, name only ===== */
+  .group-container.co-founders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .group-container.co-founders > .group-heading {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .group-container.co-founders .card {
+    border: none;
+    background: transparent;
+    padding: 1rem;
+  }
+
+  .group-container.co-founders img.card-img,
+  .group-container.co-founders img.img-fluid {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: .5rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .group-container.co-founders .card-body {
+    padding: 1rem 1rem 1rem;
+    background: transparent;
+  }
+
+  .group-container.co-founders .card-title {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  @media (max-width: 575.98px) {
+    .group-container.co-founders {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  /* ===== Collaborators: same style as default (wide cards) ===== */
+  .group-container.collaborators .group-heading {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
   /* ===== Former Lab Members: 4 per row, small proportional image, name only ===== */
   .group-container.former-members {
     display: grid;
@@ -91,11 +148,31 @@ nav_rank: 2
 
   <div class="group-container
     {% if group == 'Research Assistants' %}ra{% endif %}
+    {% if group == 'Co-founders' %}co-founders{% endif %}
+    {% if group == 'Collaborators' %}collaborators{% endif %}
     {% if group == 'Former Lab Members' %}former-members{% endif %}">
     <h2 class="group-heading">{{ group }}</h2>
 
     {% for member in members %}
-      {% if group == 'Former Lab Members' %}
+      {% if group == 'Co-founders' %}
+        <!-- Co-founders: photo + name, clickable to website -->
+        {% if member.external == true %}
+          <a href="{{ member.profile.website }}" class="text-decoration-none" target="_blank">
+        {% else %}
+          <a href="{{ member.url | relative_url }}" class="text-decoration-none">
+        {% endif %}
+          <div class="card team-card">
+            <img
+              src="{{ '/assets/img/team/' | append: member.profile.image | relative_url }}"
+              class="card-img img-fluid"
+              alt="{{ member.profile.name }}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ member.profile.name }}</h5>
+            </div>
+          </div>
+        </a>
+      {% elsif group == 'Former Lab Members' %}
         <!-- Former Lab Members: only photo + name -->
         <div class="card team-card">
           <img

@@ -2,7 +2,7 @@
 layout: page
 title: Agentic AI Persuasion Studies
 description: Understanding AI agents' persuasive capabilities in realistic social settings
-img: assets/img/agentic_persuasion.png
+img: assets/img/concepts.png
 importance: 2
 category: llm-studies
 related_publications: 

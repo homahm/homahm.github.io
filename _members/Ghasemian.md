@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: Academics
+group: Co-founders
 group_rank: 1
 group_order: 2
 external: True

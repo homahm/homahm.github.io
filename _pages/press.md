@@ -4,7 +4,7 @@ permalink: /press/
 title: press
 description: Press coverage of my studies!
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 * “To Create Boundaries With Social Media, We Must Understand How It Affects Us,” Interviewed by Kirsten Brehmer (March 9, 2025) - Daily Bruin.

@@ -2,7 +2,7 @@
 layout: page
 title: Media Fragmentation Analysis
 description: Cross-platform information consumption patterns
-img: assets/img/sharerealityproject.png
+img: assets/img/concepts.png
 importance: 2
 category: information-ecosystems
 related_publications: hosseinmardi2023sharereality, muise2022quantifying

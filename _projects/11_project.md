@@ -2,7 +2,7 @@
 layout: page
 title: Cross-Platform Comparative Studies
 description: Understanding systemic patterns across different platform architectures
-img: assets/img/cross_platform.png
+img: assets/img/concepts.png
 importance: 3
 category: sociotechnical-systems
 related_publications: 

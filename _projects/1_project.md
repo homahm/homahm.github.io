@@ -2,7 +2,7 @@
 layout: page
 title: Our Shared Reality
 description: Information ecosystem - mainstream
-img: assets/img/sharerealityproject.png
+img: assets/img/concepts.png
 importance: 1
 category: information-ecosystems
 related_publications: hosseinmardi2023sharereality, muise2022quantifying

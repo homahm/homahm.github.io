@@ -2,7 +2,7 @@
 layout: page
 title: LLM Red Teaming & Safety
 description: Adversarial testing and safety evaluation of large language models
-img: assets/img/llm_redteam.png
+img: assets/img/concepts.png
 importance: 1
 category: llm-studies
 related_publications: 

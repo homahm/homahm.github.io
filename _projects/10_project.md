@@ -2,7 +2,7 @@
 layout: page
 title: Counterfactual Auditing Methods
 description: Causal inference frameworks for auditing algorithmic systems
-img: assets/img/counterfactual_bots.png
+img: assets/img/concepts.png
 importance: 2
 category: sociotechnical-systems
 related_publications: hosseinmardi2023causally, hosseinmardi2021examining

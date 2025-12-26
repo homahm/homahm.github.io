@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: OASIS Lab # the website title (if blank, full name will be used instead)
 first_name: Homa
 middle_name:  
 last_name: Hosseinmardi
-email: homahm@seas.upenn.edu
+email: homahm@ucla.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Homa Hosseinmardi - Personal Page.
 keywords:  computational social science, auditing sociotechnical systems, AI for social good  # add your own keywords or leave empty
@@ -100,7 +100,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  I am most responsive on LinkedIn and my UPenn email.
+  I am most responsive on LinkedIn and my UCLA email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

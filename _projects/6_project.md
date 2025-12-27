@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Social Media Metrics
+title: Statistical Inference on Networks
 description: Developing robust measurement frameworks for online discourse
-img: assets/img/concepts.png
+img: assets/img/networks.png
 importance: 2
 category: computational-methods
 ---
 
-This project develops computational frameworks for measuring complex social concepts in online discourse. We create robust metrics for analyzing social media content at scale while addressing methodological challenges in digital social science.
+This project develops computational frameworks and statistical methods for analyzing network structures and relationships in online social systems. We focus on developing methods for link prediction, community detection, and node classification.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -15,7 +15,12 @@ This project develops computational frameworks for measuring complex social conc
     </div>
 </div>
 
-Our methodological contributions include validation techniques for social media metrics, bias detection in computational measures, and frameworks for ensuring reproducibility in digital social science research.
+Our methodological contributions include:
+- **Link prediction** methods for forecasting relationship formation in social networks
+- **Community detection** algorithms for identifying cohesive groups and substructures
+- **Node classification** techniques for categorizing users and content in network contexts
+
+These statistical inference methods enable us to understand network dynamics, predict user behavior, and uncover structural patterns in large-scale social media platforms.
 
 
 

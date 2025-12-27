@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Agentic AI Persuasion Studies
+title: Agentic AI Persuasions
 description: Understanding AI agents' persuasive capabilities in realistic social settings
-img: assets/img/concepts.png
+img: assets/img/Agentic_AI.png
 importance: 2
 category: llm-studies
-related_publications: 
+related_publications:
 ---
 
 This project investigates how AI agents can influence human behavior through persuasive communication in realistic social and digital environments. We study the mechanisms, effectiveness, and ethical implications of AI-driven persuasion at scale.

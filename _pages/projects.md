@@ -15,7 +15,7 @@ nav_order: 2
 }
 
 .project-block {
-  background-color: #4a5568;
+  background-color: #5A9BD5;
   color: white;
   min-height: 280px;
   display: block;
@@ -35,7 +35,7 @@ nav_order: 2
 }
 
 .project-block:hover {
-  background-color: #5a6778;
+  background-color: #F2C75C;
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   text-decoration: none;

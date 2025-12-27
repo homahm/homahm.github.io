@@ -12,7 +12,7 @@ lastname: Ding
 publications: 'author^=*Ding'
 
 teaser: >
-    I'm a junior undergraduate student majoring in statistics & data science and minoring in anthropology, and I'm focused on the interdisciplinary nature of data & information, politics & social science, and public health.
+    I'm a junior undergraduate student majoring in statistics & data science and minoring in anthropology.
 
 profile:
     name: Valérie Ding
@@ -28,4 +28,4 @@ profile:
 ---
 
 ## Short Bio
-    I'm Valérie Ding, a junior undergraduate student majoring in statistics & data science and minoring in anthropology, and I'm focused on the interdisciplinary nature of data & information, politics & social science, and public health.
+    I'm Valérie Ding, a junior undergraduate student majoring in statistics & data science and minoring in anthropology.

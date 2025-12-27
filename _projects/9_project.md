@@ -2,10 +2,10 @@
 layout: page
 title: LLM-Mediated Information Systems
 description: How large language models reshape information exposure and consumption
-img: assets/img/concepts.png
+img: assets/img/llm_assisted.png
 importance: 3
 category: llm-studies
-related_publications: 
+related_publications:
 ---
 
 This project investigates how the integration of large language models into online platforms is fundamentally reshaping the information ecosystem. We examine LLM-assisted recommender systems, content summarization, and the transparency challenges of AI-mediated information consumption.
@@ -24,9 +24,9 @@ Our work addresses critical questions about how these systems prioritize certain
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/llm_mediated_flow.png" title="LLM information flow" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/LLMs_recommendation_audit_v7.pdf" title="LLM recommendation system audit" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    How LLMs reshape information pathways in digital ecosystems.
+    Auditing LLM-assisted recommendation systems through counterfactual interventions to understand how viewing history influences recommendation rankings.
 </div>

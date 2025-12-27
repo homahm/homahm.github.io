@@ -12,7 +12,7 @@ lastname: Taha
 publications: 'author^=*Taha'
 
 teaser: >
-    I am currently a senior at UCLA pursuing a B.S in Statistics and Data Science. My interests lie in the interdisciplinary applications of data science in the realms of public health, psychology, and social media research.
+    I am currently a senior at UCLA pursuing a B.S in Statistics and Data Science.
 
 profile:
     name: Anita Taha
@@ -28,4 +28,4 @@ profile:
 ---
 
 ## Short Bio
-    My name is Anita Taha, and I am currently a senior at UCLA pursuing a B.S in Statistics and Data Science. My interests lie in the interdisciplinary applications of data science in the realms of public health, psychology, and social media research.
+    My name is Anita Taha, and I am currently a senior at UCLA pursuing a B.S in Statistics and Data Science. 

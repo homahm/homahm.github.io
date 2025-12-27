@@ -12,7 +12,7 @@ lastname: Nguyen
 publications: 'author^=*Nguyen'
 
 teaser: >
-    I pursue a B.S. degree in Statistics and Data Science at UCLA. I explore the intersection between data science and social science, specifically in the context of social media!
+    I pursue a B.S. degree in Statistics and Data Science at UCLA. 
 
 profile:
     name: Olivia Nguyen

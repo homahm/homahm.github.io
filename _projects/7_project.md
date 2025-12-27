@@ -2,10 +2,10 @@
 layout: page
 title: LLM Red Teaming & Safety
 description: Adversarial testing and safety evaluation of large language models
-img: assets/img/concepts.png
+img: assets/img/read_teaming.png
 importance: 1
 category: llm-studies
-related_publications: 
+related_publications:
 ---
 
 This project focuses on systematically evaluating the safety, robustness, and alignment of large language models through red teaming methodologies. We develop novel techniques to probe LLM vulnerabilities and assess potential risks in real-world deployment scenarios.

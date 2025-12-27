@@ -1,8 +1,8 @@
 ---
 layout: page
-title: quantifying concepts
+title: Quantifying Concepts
 description: Measuring Partisanship, Factual Accuracy, and Extremism in Media Discourse
-img: assets/img/concepts.png
+img: assets/img/quant_concepts.png
 importance: 3
 category: computational-methods
 ---

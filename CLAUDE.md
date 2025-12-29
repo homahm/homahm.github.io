@@ -6,6 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Academic personal website built with the **al-folio Jekyll theme** for Homa Hosseinmardi (computational social scientist). This is a **Jekyll-powered GitHub Pages site** that showcases research, publications, team members, and academic activities.
 
+The al-folio theme is specifically designed for academics and provides features like:
+- Automatic bibliography generation from BibTeX files
+- Academic CV layouts with structured data
+- Team member profiles with group organization
+- Project showcases with publication linking
+- Responsive design with dark mode support
+
 ## Development Commands
 
 ### Local Development
@@ -34,9 +41,9 @@ bundle exec jekyll build
 
 ### Jekyll Collections System
 This site uses three custom collections for structured academic content:
-- **`_members/`**: Team member profiles with group-based organization
-- **`_news/`**: News announcements with date-based naming
-- **`_projects/`**: Research project showcases with bibliography integration
+- **`_members/`**: Team member profiles with group-based organization (filenames: `lastname.md`)
+- **`_news/`**: News announcements with sequential naming (`announcement_0.md`, `announcement_1.md`, etc.)
+- **`_projects/`**: Research project showcases with bibliography integration (filenames: `N_project.md`)
 
 ### Academic Bibliography System
 - **Jekyll Scholar** processes `_bibliography/papers.bib` for publication management
@@ -66,16 +73,26 @@ selected_papers: true  # Show featured publications
 ### Member Profiles (`_members/`)
 ```yaml
 layout: about
-group: "Research Assistants"|"Faculty"|"PhD Students"
-group_rank: 1-10    # Display ordering within group
-external: true      # For external collaborators
+inline: false
+group: "Co-founders"|"Research Assistants"|"Faculty"|"PhD Students"
+group_rank: 1-10      # Display ordering within group
+group_order: 1-10     # Group display order on team page
+external: True        # For external collaborators (capital T)
+title: Full Name
+lastname: LastName    # Used for filename matching
+publications: 'author^=*LastName'  # Scholar query for filtering
+teaser: >             # Brief bio shown in listings
+  Short description...
 profile:
   name: Full Name
+  position: Optional position field
+  align: right
   image: filename.jpg  # Must exist in assets/img/
   role: Position Title
-  orcid:
-  website:
-  email:
+  email: user@ucla.edu
+  website: https://example.com/
+  github: username    # Optional
+  orcid: 0000-0000-0000-0000  # Optional
 ```
 
 ### Projects (`_projects/`)
@@ -84,9 +101,14 @@ layout: page
 title: Project Title
 description: Brief description
 img: assets/img/preview.png
-importance: 1-10    # Lower number = higher priority
-category: category-slug  # Groups projects on /projects/ page
-related_publications: bibtexkey1, bibtexkey2  # Links to bibliography
+importance: 1-10    # Lower number = higher priority on display
+category: category-slug  # Groups projects on /projects/ page (e.g., "information-ecosystems")
+related_publications: bibtexkey1, bibtexkey2  # Links to bibliography (comma-separated)
+publications_list:  # Optional: manually list publications instead of using related_publications
+  - title: "Paper Title"
+    authors: "Author1, Author2"
+    year: 2024
+    venue: "Venue Name"
 ```
 
 ### News Announcements (`_news/`)
@@ -142,8 +164,9 @@ related_posts: false
 ### Adding Team Members
 1. Create `_members/lastname.md` with required frontmatter (see conventions above)
 2. Add optimized profile image to `assets/img/` (large images slow page loads)
-3. Set `group` and `group_rank` for automatic organization on `/team/`
-4. External collaborators: set `external: True`
+3. Set `group`, `group_rank`, and `group_order` for automatic organization on `/team/`
+4. External collaborators: set `external: True` (capital T)
+5. Use `publications` field to filter author's papers (e.g., `'author^=*LastName'`)
 
 ### Updating Publications
 1. Edit `_bibliography/papers.bib` with new BibTeX entries

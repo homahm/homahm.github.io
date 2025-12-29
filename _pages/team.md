@@ -156,7 +156,9 @@ nav_rank: 1
     {% for member in members %}
       {% if group == 'Co-founders' %}
         <!-- Co-founders: photo + name, clickable to website -->
-        {% if member.external == true %}
+        {% if member.lastname == 'Hosseinmardi' %}
+          <a href="{{ '/about.html' | relative_url }}" class="text-decoration-none">
+        {% elsif member.external == true %}
           <a href="{{ member.profile.website }}" class="text-decoration-none" target="_blank">
         {% else %}
           <a href="{{ member.url | relative_url }}" class="text-decoration-none">

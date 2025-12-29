@@ -5,16 +5,12 @@ description: Information ecosystem - mainstream
 img: assets/img/shared_reality.png
 importance: 1
 category: information-ecosystems
-related_publications: hosseinmardi2023sharereality, muise2022quantifying
+related_publications: hosseinmardi2023sharereality
 publications_list:
-  - title: "The diminishing state of shared reality on US television news"
-    authors: "Hosseinmardi, H., Wolken, S., Rothschild, D., & Watts, D. J."
-    year: 2024
-    venue: "Scientific Reports"
-  - title: "Quantifying partisan news diets in Web and TV audiences"
-    authors: "Muise, D., Hosseinmardi, H., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J."
-    year: 2022
-    venue: "Science Advances, 8(28)"
+  - title: "Unpacking media bias in the growing divide between cable and network news"
+    authors: "Hosseinmardi, H., Wolken, S., Rothschild, D. M., & Watts, D. J."
+    year: 2025
+    venue: "Scientific Reports, 15(1), 17607"
 ---
 
 This project examines the erosion of shared reality in American media, analyzing how television news—historically the nation's primary source of common information—is becoming increasingly fragmented. We investigate both the production side (what content is broadcast) and consumption side (what audiences watch) to understand the full scope of this transformation.

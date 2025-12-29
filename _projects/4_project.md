@@ -5,12 +5,8 @@ description: Cross-platform information consumption patterns
 img: assets/img/fragmented.png
 importance: 2
 category: information-ecosystems
-related_publications: hosseinmardi2023sharereality, muise2022quantifying
+related_publications: muise2022quantifying
 publications_list:
-  - title: "The diminishing state of shared reality on US television news"
-    authors: "Hosseinmardi, H., Wolken, S., Rothschild, D., & Watts, D. J."
-    year: 2024
-    venue: "Scientific Reports"
   - title: "Quantifying partisan news diets in Web and TV audiences"
     authors: "Muise, D., Hosseinmardi, H., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J."
     year: 2022

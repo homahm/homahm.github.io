@@ -179,12 +179,30 @@ function togglePublications(id) {
               <div class="col-12">
               {%- endif -%}
                 <div class="card-body">
+                  {%- if project.related_publications -%}
+                  <div onclick="togglePublications('pubs-{{ project.title | slugify }}')" style="cursor: pointer;">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                  </div>
+                  {%- else -%}
                   <h5 class="card-title">{{ project.title }}</h5>
                   <p class="card-text">{{ project.description }}</p>
+                  {%- endif -%}
                 </div>
               </div>
             </div>
           </div>
+          {%- if project.related_publications -%}
+          <div class="publications-list" id="pubs-{{ project.title | slugify }}">
+            <ul>
+              {%- for pub in project.publications_list -%}
+              <li>
+                {{ pub.authors }} ({{ pub.year }}). {{ pub.title }}. <em>{{ pub.venue }}</em>.
+              </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- endif -%}
         </div>
       </div>
     {%- endfor %}
@@ -212,12 +230,30 @@ function togglePublications(id) {
               <div class="col-12">
               {%- endif -%}
                 <div class="card-body">
+                  {%- if project.related_publications -%}
+                  <div onclick="togglePublications('pubs-{{ project.title | slugify }}')" style="cursor: pointer;">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                  </div>
+                  {%- else -%}
                   <h5 class="card-title">{{ project.title }}</h5>
                   <p class="card-text">{{ project.description }}</p>
+                  {%- endif -%}
                 </div>
               </div>
             </div>
           </div>
+          {%- if project.related_publications -%}
+          <div class="publications-list" id="pubs-{{ project.title | slugify }}">
+            <ul>
+              {%- for pub in project.publications_list -%}
+              <li>
+                {{ pub.authors }} ({{ pub.year }}). {{ pub.title }}. <em>{{ pub.venue }}</em>.
+              </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- endif -%}
         </div>
       </div>
     {%- endfor %}

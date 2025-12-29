@@ -5,12 +5,8 @@ description: Comprehensive evaluation of AI systems in real-world deployment con
 img: assets/img/prevalence.png
 importance: 1
 category: sociotechnical-systems
-related_publications: hosseinmardi2023causally, hosseinmardi2021examining, horta2023deplatforming
+related_publications: hosseinmardi2021examining, horta2023deplatforming
 publications_list:
-  - title: "Causally estimating the effect of YouTube's recommender system using counterfactual bots"
-    authors: "Hosseinmardi, H., Ghasemian, A., Rivera-Lanas, M., Horta Ribeiro, M., West, R., & Watts, D. J."
-    year: 2024
-    venue: "Proceedings of the National Academy of Sciences, 121(8)"
   - title: "Examining the consumption of radical content on YouTube"
     authors: "Hosseinmardi, H., Ghasemian, A., Clauset, A., Mobius, M., Rothschild, D. M., & Watts, D. J."
     year: 2021

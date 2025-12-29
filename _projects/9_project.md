@@ -2,7 +2,7 @@
 layout: page
 title: LLM-Mediated Information Systems
 description: How large language models reshape information exposure and consumption
-img: assets/img/llm_assisted.png
+img: assets/img/llmediated.png
 importance: 3
 category: llm-studies
 related_publications:

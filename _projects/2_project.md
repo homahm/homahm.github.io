@@ -1,11 +1,24 @@
 ---
 layout: page
-title: Auditing Sociotechnical AI Systems
+title: Prevalence of Problematic Content
 description: Comprehensive evaluation of AI systems in real-world deployment contexts
-img: assets/img/concepts.png
+img: assets/img/prevalence.png
 importance: 1
 category: sociotechnical-systems
 related_publications: hosseinmardi2023causally, hosseinmardi2021examining, horta2023deplatforming
+publications_list:
+  - title: "Causally estimating the effect of YouTube's recommender system using counterfactual bots"
+    authors: "Hosseinmardi, H., Ghasemian, A., Rivera-Lanas, M., Horta Ribeiro, M., West, R., & Watts, D. J."
+    year: 2024
+    venue: "Proceedings of the National Academy of Sciences, 121(8)"
+  - title: "Examining the consumption of radical content on YouTube"
+    authors: "Hosseinmardi, H., Ghasemian, A., Clauset, A., Mobius, M., Rothschild, D. M., & Watts, D. J."
+    year: 2021
+    venue: "Proceedings of the National Academy of Sciences, 118(32)"
+  - title: "Deplatforming did not decrease Parler users' activity on fringe social media"
+    authors: "Horta Ribeiro, M., Hosseinmardi, H., West, R., & Watts, D. J."
+    year: 2023
+    venue: "PNAS nexus, 2(3)"
 ---
 
 This project examines how AI systems operate within complex sociotechnical environments, investigating the interplay between algorithmic design, user behavior, and societal outcomes. We develop methodologies to audit AI systems across their entire lifecycle, from development to deployment.

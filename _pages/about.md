@@ -1,8 +1,10 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about.html
 subtitle: Affiliation <a href="https://comm.ucla.edu/people/faculty/professors/">University of California, Los Angeles</a>
+nav: true
+nav_order: 8
 
 profile:
   align: right

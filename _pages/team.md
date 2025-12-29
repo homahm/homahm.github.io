@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /team.html
+permalink: /
 title: OASIS lab
 page-title: Team
 description: Online and AI Systems' Integrity & Safety
-nav: true
+nav: false
 nav_order: 1
 nav_rank: 1
 ---

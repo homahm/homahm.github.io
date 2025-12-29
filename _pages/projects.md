@@ -1,94 +1,60 @@
 ---
 layout: page
-title: projects
+title: research
 permalink: /projects/
-description: Our lab's work is grouped into four broad tracks which make up the primary research programs at the Computational Social Science Lab.
+description: In today's world, digital technologies are increasingly mediated by artificial intelligence systems whose inner workings are complex and often opaque, raising important questions about their societal impact. Our group brings together strong computational and engineering expertise to study the safety and integrity of online ecosystems. Our work focuses on developing scalable detection and prediction methods for large-scale, real-world data, and on designing controlled experiments to audit the safety and integrity of algorithmic systems, including settings where content may appear benign in isolation but interactions between algorithms and humans lead to consequential outcomes. We apply these methods across a range of societal risk domains, including harassment and abuse of vulnerable groups, biased or discriminatory treatment of minorities, radicalization and political polarization, the reliability of health information, and risks to youth safety and emotional well-being.
 nav: true
 nav_order: 2
 ---
 
 <!-- pages/projects.md -->
 <style>
-.project-blocks {
-  max-width: 1000px;
-  margin: 3rem auto;
+.projects p,
+.projects .card-text,
+.projects .text-muted {
+  text-align: justify;
 }
-
-.project-block {
-  background-color: #5A9BD5;
-  color: white;
-  min-height: 280px;
+.projects .category {
+  color: #000000 !important;
+}
+.publications-toggle {
+  cursor: pointer;
+  color: #2774AE;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  user-select: none;
+}
+.publications-toggle:hover {
+  color: #F2C75C;
+}
+.publications-list {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+.publications-list.show {
   display: block;
-  text-align: center;
-  padding: 2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border-radius: 0;
-  margin-bottom: 1.5rem;
 }
-
-.project-block > * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 280px;
+.publications-list ul {
+  list-style: none;
+  padding-left: 0;
 }
-
-.project-block:hover {
-  background-color: #F2C75C;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-
-.project-block h3 {
-  color: white;
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.4;
-}
-
-.project-block:hover h3 {
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .project-block {
-    min-height: 200px;
-  }
-  .project-block h3 {
-    font-size: 1.5rem;
-  }
+.publications-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 </style>
 
-<div class="project-blocks">
-  <div class="row g-4">
-    <div class="col-12 col-md-6">
-      <a href="#llm-studies" class="project-block">
-        <h3>Large Language Models and Agentic AI</h3>
-      </a>
-    </div>
-    <div class="col-12 col-md-6">
-      <a href="#sociotechnical-systems" class="project-block">
-        <h3>Sociotechnical System's intergirty and safety</h3>
-      </a>
-    </div>
-    <div class="col-12 col-md-6">
-      <a href="#information-ecosystems" class="project-block">
-        <h3>Media and Demoncracy</h3>
-      </a>
-    </div>
-    <div class="col-12 col-md-6">
-      <a href="#computational-methods" class="project-block">
-        <h3>Computational Methods</h3>
-      </a>
-    </div>
-  </div>
-</div>
+<script>
+function togglePublications(id) {
+  const pubList = document.getElementById(id);
+  pubList.classList.toggle('show');
+}
+</script>
 
-<!-- Detailed project sections -->
+<!-- Detailed research sections -->
 <div class="projects mt-5">
   <h2 class="category" id="llm-studies">Studies of Large Language Models</h2>
   <p class="text-muted mb-4">Investigating the safety, behavior, and societal impact of large language models through red teaming, auditing, and experimental evaluation.</p>
@@ -111,12 +77,30 @@ nav_order: 2
               <div class="col-12">
               {%- endif -%}
                 <div class="card-body">
+                  {%- if project.related_publications -%}
+                  <div onclick="togglePublications('pubs-{{ project.title | slugify }}')" style="cursor: pointer;">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                  </div>
+                  {%- else -%}
                   <h5 class="card-title">{{ project.title }}</h5>
                   <p class="card-text">{{ project.description }}</p>
+                  {%- endif -%}
                 </div>
               </div>
             </div>
           </div>
+          {%- if project.related_publications -%}
+          <div class="publications-list" id="pubs-{{ project.title | slugify }}">
+            <ul>
+              {%- for pub in project.publications_list -%}
+              <li>
+                {{ pub.authors }} ({{ pub.year }}). {{ pub.title }}. <em>{{ pub.venue }}</em>.
+              </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- endif -%}
         </div>
       </div>
     {%- endfor %}
@@ -144,12 +128,30 @@ nav_order: 2
               <div class="col-12">
               {%- endif -%}
                 <div class="card-body">
+                  {%- if project.related_publications -%}
+                  <div onclick="togglePublications('pubs-{{ project.title | slugify }}')" style="cursor: pointer;">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                  </div>
+                  {%- else -%}
                   <h5 class="card-title">{{ project.title }}</h5>
                   <p class="card-text">{{ project.description }}</p>
+                  {%- endif -%}
                 </div>
               </div>
             </div>
           </div>
+          {%- if project.related_publications -%}
+          <div class="publications-list" id="pubs-{{ project.title | slugify }}">
+            <ul>
+              {%- for pub in project.publications_list -%}
+              <li>
+                {{ pub.authors }} ({{ pub.year }}). {{ pub.title }}. <em>{{ pub.venue }}</em>.
+              </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- endif -%}
         </div>
       </div>
     {%- endfor %}

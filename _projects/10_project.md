@@ -1,11 +1,20 @@
 ---
 layout: page
-title: Counterfactual Auditing Methods
+title: Counterfactual Experiment Design
 description: Causal inference frameworks for auditing algorithmic systems
-img: assets/img/concepts.png
+img: assets/img/conterfactual.png
 importance: 2
 category: sociotechnical-systems
 related_publications: hosseinmardi2023causally, hosseinmardi2021examining
+publications_list:
+  - title: "Causally estimating the effect of YouTube's recommender system using counterfactual bots"
+    authors: "Hosseinmardi, H., Ghasemian, A., Rivera-Lanas, M., Horta Ribeiro, M., West, R., & Watts, D. J."
+    year: 2024
+    venue: "Proceedings of the National Academy of Sciences, 121(8)"
+  - title: "Examining the consumption of radical content on YouTube"
+    authors: "Hosseinmardi, H., Ghasemian, A., Clauset, A., Mobius, M., Rothschild, D. M., & Watts, D. J."
+    year: 2021
+    venue: "Proceedings of the National Academy of Sciences, 118(32)"
 ---
 
 This project develops novel methodological frameworks for causally estimating the effects of algorithmic systems using counterfactual experimental designs. We pioneered the use of "counterfactual bots" that replicate user behaviors under different algorithmic exposure conditions.

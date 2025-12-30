@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /
+permalink: /team.html
 title: OASIS lab
 page-title: Team
 description: Online and AI Systems' Integrity & Safety
-nav: false
+nav: true
 nav_order: 1
 nav_rank: 1
 ---
@@ -157,7 +157,7 @@ nav_rank: 1
       {% if group == 'Co-founders' %}
         <!-- Co-founders: photo + name, clickable to website -->
         {% if member.lastname == 'Hosseinmardi' %}
-          <a href="{{ '/about.html' | relative_url }}" class="text-decoration-none">
+          <a href="{{ '/' | relative_url }}" class="text-decoration-none">
         {% elsif member.external == true %}
           <a href="{{ member.profile.website }}" class="text-decoration-none" target="_blank">
         {% else %}

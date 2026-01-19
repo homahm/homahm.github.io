@@ -1,9 +1,9 @@
 ---
 layout: about
 inline: false
-group: Grad Students
+group: Team Members
 group_rank: 2
-group_order: 3
+group_order: 4
 external: True
 
 title: Upasana Dutta
@@ -12,7 +12,7 @@ lastname: Dutta
 publications: 'author^=*Dutta'
 
 teaser: >
-    I am a second-year Ph.D. student in Computer and Information Science at the University of Pennsylvania.
+    I am a third-year Ph.D. student in Computer and Information Science at the University of Pennsylvania.
     
 profile:
     name: Upasana Dutta (Collaborator)

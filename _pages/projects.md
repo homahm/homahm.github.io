@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /projects/
-description: In today's world, digital technologies are increasingly mediated by artificial intelligence systems whose inner workings are complex and often opaque, raising important questions about their societal impact. Our group brings together strong computational and engineering expertise to study the safety and integrity of online ecosystems. Our work focuses on developing scalable detection and prediction methods for large-scale, real-world data, and on designing controlled experiments to audit the safety and integrity of algorithmic systems, including settings where content may appear benign in isolation but interactions between algorithms and humans lead to consequential outcomes. We apply these methods across a range of societal risk domains, including harassment and abuse of vulnerable groups, biased or discriminatory treatment of minorities, radicalization and political polarization, the reliability of health information, and risks to youth safety and emotional well-being.
+description: We investigate the safety and integrity of AI systems and online platforms through rigorous empirical research. Our work combines scalable computational methods with causal experimental designs to audit algorithmic systems, quantify information fragmentation across media platforms, and evaluate the risks posed by large language models—from adversarial vulnerabilities to persuasive capabilities. By studying the complex interactions between algorithms and human behavior, we aim to understand how digital technologies shape information exposure, public discourse, and societal outcomes.
 nav: true
 nav_order: 2
 ---

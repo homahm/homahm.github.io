@@ -3,7 +3,7 @@ layout: about
 inline: false
 group: Team Members
 group_rank: 2
-group_order: 4
+group_order: 6
 external: True
 
 title: Upasana Dutta

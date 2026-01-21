@@ -15,7 +15,7 @@ teaser: >
     I am a third-year Ph.D. student in Film and Media studies at UCLA. I'm interested in combining humanistic inquiry and computational analysis to develop validation methods that explain how large language models mediate contemporary media environments, identify their biases, and help address them.
     
 profile:
-    name: Pavel Savgira  (Collaborator)
+    name: Pavel Savgira
     position: Doctoral Student 
     align: right
     image: Pavel.jpeg

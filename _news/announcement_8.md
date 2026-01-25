@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited speaker at the workshop on <a href="https://maxkasy.github.io/home/information_filtering_workshop/">"AI and the political economy of information filtering"</a> taking place May 25-27, 2026!
+Invited speaker at <a href="https://maxkasy.github.io/home/information_filtering_workshop/">"AI and the political economy of information filtering"</a> at Oxford University, May 25-27, 2026!

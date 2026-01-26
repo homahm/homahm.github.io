@@ -62,6 +62,7 @@ nav_order: 5
   </thead>
   <tbody>
     <tr><td>KDD - Data Science</td><td>February</td><td><a href="https://kdd2026.kdd.org/applied-data-science-ads-track-call-for-papers/">KDD</a></td></tr>
+    <tr><td>AgentWild Workshop (ICLR)</td><td>February</td><td><a href="https://agentwild-workshop.github.io/">AgentWild</a></td></tr>
     <tr><td>COLM</td><td>March</td><td><a href="https://colmweb.org/index.html">COLM</a></td></tr>
     <tr><td>CIKM</td><td>May</td><td><a href="https://cikm2025.org/">CIKM</a></td></tr>
     <tr><td>NeurIPS</td><td>May</td><td><a href="https://neurips.cc/Conferences/2025/Dates">NeurIPS</a></td></tr>

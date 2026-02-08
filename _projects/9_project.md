@@ -5,7 +5,12 @@ description: How large language models reshape information exposure and consumpt
 img: assets/img/llmediated.png
 importance: 3
 category: llm-studies
-related_publications:
+has_active_projects: true
+active_projects:
+  - title: "Systematic Audit of LLM Summarization"
+    team: "Homa Hosseinmardi, Pavel Savgira"
+  - title: "Safeguarding Personalization by LLM-Assisted Reranking"
+    team: "Homa Hosseinmardi, Amir Ghasemian, Upasana Dutta, Duncan Watts"
 ---
 
 This project investigates how the integration of large language models into online platforms is fundamentally reshaping the information ecosystem. We examine LLM-assisted recommender systems, content summarization, and the transparency challenges of AI-mediated information consumption.

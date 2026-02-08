@@ -37,6 +37,18 @@ bundle exec jekyll build
 # Outputs to _site/ directory
 ```
 
+### Production Build (with LSI and CSS optimization)
+```bash
+JEKYLL_ENV=production bundle exec jekyll build --lsi
+purgecss -c purgecss.config.js
+```
+
+### Quick Local Preview (without Docker/Jekyll)
+```bash
+cd _site && python3 -m http.server 8000
+# Serves at localhost:8000
+```
+
 ## Architecture Overview
 
 ### Jekyll Collections System
@@ -74,7 +86,7 @@ selected_papers: true  # Show featured publications
 ```yaml
 layout: about
 inline: false
-group: "Co-founders"|"Research Assistants"|"Faculty"|"PhD Students"
+group: "Team Members"|"Co-founders"|"Research Assistants"|"Faculty"
 group_rank: 1-10      # Display ordering within group
 group_order: 1-10     # Group display order on team page
 external: True        # For external collaborators (capital T)
@@ -84,16 +96,18 @@ publications: 'author^=*LastName'  # Scholar query for filtering
 teaser: >             # Brief bio shown in listings
   Short description...
 profile:
-  name: Full Name
+  name: Full Name           # Append "(Collaborator)" for external members
   position: Optional position field
   align: right
-  image: filename.jpg  # Must exist in assets/img/
+  image: filename.jpg       # Must exist in BOTH assets/img/ AND assets/img/team/
   role: Position Title
   email: user@ucla.edu
   website: https://example.com/
   github: username    # Optional
   orcid: 0000-0000-0000-0000  # Optional
 ```
+
+**Important**: Member profile images must be placed in **both** `assets/img/` (for the about layout on individual pages) and `assets/img/team/` (for the team listing page). The team page template prepends `/assets/img/team/` to the image path, while the about layout prepends `assets/img/`. Omit empty optional fields entirely rather than leaving them blank (blank values can cause build errors).
 
 ### Projects (`_projects/`)
 ```yaml
@@ -140,6 +154,9 @@ related_posts: false
 
 - **`_config.yml`**: Site-wide settings, Jekyll Scholar config, social links, feature toggles
 - **`_data/cv.yml`**: Structured CV data (education, experience, awards)
+- **`_data/coauthors.yml`**: Co-author profile data for publication disambiguation
+- **`_data/repositories.yml`**: GitHub repositories to display on site
+- **`_data/venues.yml`**: Venue/conference data for publications
 - **`_sass/_variables.scss`**: Theme colors and responsive breakpoints
 - **`assets/json/resume.json`**: Machine-readable resume data (loaded via `jekyll_get_json`)
 
@@ -163,10 +180,29 @@ related_posts: false
 
 ### Adding Team Members
 1. Create `_members/lastname.md` with required frontmatter (see conventions above)
-2. Add optimized profile image to `assets/img/` (large images slow page loads)
-3. Set `group`, `group_rank`, and `group_order` for automatic organization on `/team/`
-4. External collaborators: set `external: True` (capital T)
-5. Use `publications` field to filter author's papers (e.g., `'author^=*LastName'`)
+2. Add optimized profile image to **both** `assets/img/` and `assets/img/team/` (large images slow page loads)
+3. Use square-cropped images for consistency with existing team member photos
+4. Set `group`, `group_rank`, and `group_order` for automatic organization on `/team/`
+5. External collaborators: set `external: True` (capital T) and add "(Collaborator)" to the `profile.name` field
+6. Use `publications` field to filter author's papers (e.g., `'author^=*LastName'`)
+
+### Navigation Structure
+- Top-level pages use `nav: true` and `nav_order` in frontmatter
+- Dropdown menus are defined in separate `.md` files with `dropdown: true` and `children` list
+- To nest a page under a dropdown: set `nav: false` on the page, add it as a child in the dropdown file
+- Example dropdown file (`_pages/resources.md`):
+  ```yaml
+  layout: page
+  title: resources
+  nav: true
+  nav_order: 6
+  dropdown: true
+  children:
+      - title: cv
+        permalink: /cv/
+      - title: conferences
+        permalink: /conferences/
+  ```
 
 ### Updating Publications
 1. Edit `_bibliography/papers.bib` with new BibTeX entries
@@ -178,6 +214,13 @@ related_posts: false
 - The entry point script uses `inotifywait` to monitor config file changes
 - Serves on port 8080 (not default 4000) with `--livereload` enabled
 
+## Deployment
+
+- **GitHub Actions** automatically builds and deploys on push to `master` branch
+- The workflow builds with `--lsi` (Latent Semantic Indexing), runs PurgeCSS, and deploys to `gh-pages` branch
+- A `.nojekyll` file is created during deployment to bypass GitHub Pages' built-in Jekyll processing
+- Manual deployment available via `bin/deploy` script
+
 ## Production Considerations
 
 - **GitHub Pages**: Some plugins require pre-building via GitHub Actions workflow
@@ -185,12 +228,31 @@ related_posts: false
 - **Responsive images**: Generated in widths 480px, 800px, 1400px (configured in `_config.yml`)
 - **Open Graph/Schema.org**: Verify `serve_og_meta` and `serve_schema_org` settings for social media sharing
 
-## File Structure Notes
+## Site Structure
 
+### Current Page Routing
+- `/` → About/homepage (`_pages/about.md`)
+- `/team.html` → OASIS Lab team page (`_pages/team.md`)
+- `/projects/` → Research projects (`_pages/projects.md`)
+- `/publications/` → Publications (`_pages/publications.md`)
+- `/cv/` → CV (under "resources" dropdown)
+- `/conferences/` → Conferences list (under "resources" dropdown)
+
+### File Structure
 - `_includes/`: Reusable HTML components (header, footer, social links, news feed, project cards)
 - `_layouts/`: Page templates
-- `_pages/`: Main site pages (about, publications, cv, team, projects)
+- `_pages/`: Main site pages (about, publications, cv, team, projects, conferences, resources)
 - `_sass/`: SCSS stylesheets (variables, themes, layouts)
 - `_site/`: Generated output (excluded from git)
-- `assets/`: Static assets (images, JSON, PDFs)
+- `assets/img/`: General images and member profile images (for about layout)
+- `assets/img/team/`: Member profile images (for team listing page)
+- `assets/pdf/`: PDF files (CV, papers)
 - `bin/`: Build and deployment scripts
+
+## Troubleshooting
+
+- **Build requires UTF-8**: Use `LANG=en_US.UTF-8 bundle exec jekyll build` if BibTeX encoding fails
+- **ImageMagick warnings**: `convert: command not found` warnings are safe to ignore locally; images will use originals
+- **`.jekyll-cache/`**: Delete this directory if builds seem stale after major changes
+- **Bibliography not updating**: Requires full Jekyll restart (not just live reload)
+- **Member image not showing**: Ensure the image exists in both `assets/img/` and `assets/img/team/`

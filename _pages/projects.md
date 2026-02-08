@@ -45,6 +45,26 @@ nav_order: 2
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
+.active-projects-list {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+.active-projects-list.show {
+  display: block;
+}
+.active-project-item {
+  margin-bottom: 1rem;
+}
+.active-project-item h6 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+.active-project-item .team-members {
+  font-size: 0.85rem;
+  color: #666;
+}
 </style>
 
 <script>
@@ -77,7 +97,7 @@ function togglePublications(id) {
               <div class="col-12">
               {%- endif -%}
                 <div class="card-body">
-                  {%- if project.related_publications -%}
+                  {%- if project.related_publications or project.has_active_projects -%}
                   <div onclick="togglePublications('pubs-{{ project.title | slugify }}')" style="cursor: pointer;">
                     <h5 class="card-title">{{ project.title }}</h5>
                     <p class="card-text">{{ project.description }}</p>
@@ -99,6 +119,16 @@ function togglePublications(id) {
               </li>
               {%- endfor -%}
             </ul>
+          </div>
+          {%- endif -%}
+          {%- if project.has_active_projects -%}
+          <div class="active-projects-list" id="pubs-{{ project.title | slugify }}">
+            {%- for ap in project.active_projects -%}
+            <div class="active-project-item">
+              <h6>{{ ap.title }}</h6>
+              <div class="team-members">Team: {{ ap.team }}</div>
+            </div>
+            {%- endfor -%}
           </div>
           {%- endif -%}
         </div>
@@ -128,7 +158,7 @@ function togglePublications(id) {
               <div class="col-12">
               {%- endif -%}
                 <div class="card-body">
-                  {%- if project.related_publications -%}
+                  {%- if project.related_publications or project.has_active_projects -%}
                   <div onclick="togglePublications('pubs-{{ project.title | slugify }}')" style="cursor: pointer;">
                     <h5 class="card-title">{{ project.title }}</h5>
                     <p class="card-text">{{ project.description }}</p>
@@ -141,15 +171,26 @@ function togglePublications(id) {
               </div>
             </div>
           </div>
-          {%- if project.related_publications -%}
-          <div class="publications-list" id="pubs-{{ project.title | slugify }}">
-            <ul>
+          {%- if project.related_publications or project.has_active_projects -%}
+          <div class="active-projects-list" id="pubs-{{ project.title | slugify }}">
+            {%- if project.has_active_projects -%}
+            {%- for ap in project.active_projects -%}
+            <div class="active-project-item">
+              <h6>{{ ap.title }}</h6>
+              <div class="team-members">Team: {{ ap.team }}</div>
+            </div>
+            {%- endfor -%}
+            {%- endif -%}
+            {%- if project.related_publications -%}
+            <h6 style="margin-top: 1rem;">Publications</h6>
+            <ul style="list-style: none; padding-left: 0;">
               {%- for pub in project.publications_list -%}
-              <li>
+              <li style="margin-bottom: 0.5rem; font-size: 0.9rem;">
                 {{ pub.authors }} ({{ pub.year }}). {{ pub.title }}. <em>{{ pub.venue }}</em>.
               </li>
               {%- endfor -%}
             </ul>
+            {%- endif -%}
           </div>
           {%- endif -%}
         </div>

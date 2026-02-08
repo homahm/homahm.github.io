@@ -5,6 +5,10 @@ description: Comprehensive evaluation of AI systems in real-world deployment con
 img: assets/img/prevalence.png
 importance: 1
 category: sociotechnical-systems
+has_active_projects: true
+active_projects:
+  - title: "Audit of Young Adults' Exposure in the Look for Sexual Content"
+    team: "Homa Hosseinmardi, Afsaneh Razi, Amir Ghasemian, Pooriya Jamie, Tyler Chang"
 related_publications: hosseinmardi2021examining, horta2023deplatforming
 publications_list:
   - title: "Examining the consumption of radical content on YouTube"

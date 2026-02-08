@@ -5,7 +5,12 @@ description: Adversarial testing and safety evaluation of large language models
 img: assets/img/read_teaming.png
 importance: 1
 category: llm-studies
-related_publications:
+has_active_projects: true
+active_projects:
+  - title: "Using Therapeutic Interactions to Improve General-Purpose LLM Safety"
+    team: "Homa Hosseinmardi, Joan Asarnow, Amir Ghasemian, Pooriya Jamie, Anita Taha"
+  - title: "Adversarial Red Teaming for Multi-Agent Systems"
+    team: "Homa Hosseinmardi, Amir Ghasemian, Sanchit Kabra"
 ---
 
 This project focuses on systematically evaluating the safety, robustness, and alignment of large language models through red teaming methodologies. We develop novel techniques to probe LLM vulnerabilities and assess potential risks in real-world deployment scenarios.

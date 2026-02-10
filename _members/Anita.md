@@ -1,13 +1,13 @@
 ---
 layout: about
 inline: false
-group: Research Assistants
-group_rank: 3
-group_order: 5
+group: Team Members
+group_rank: 2
+group_order: 7
 external: True
 
 title: Anita Taha
-description: Profile of Olivia Nguyen.
+description: Profile of Anita Taha.
 lastname: Taha
 publications: 'author^=*Taha'
 
@@ -20,11 +20,7 @@ profile:
     align: right
     image: Anita_2025.jpg
     role: Undergraduate Student
-    orcid: 
-    website: 
     email: anitataha@ucla.edu
-    github: 
-    # address: >
 ---
 
 ## Short Bio

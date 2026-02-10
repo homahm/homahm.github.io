@@ -8,7 +8,7 @@ category: llm-studies
 has_active_projects: true
 active_projects:
   - title: "Using Therapeutic Interactions to Improve General-Purpose LLM Safety"
-    team: "Homa Hosseinmardi, Joan Asarnow, Amir Ghasemian, Pooriya Jamie, Anita Taha"
+    team: "Homa Hosseinmardi, Amir Ghasemian, Joan Asarnow, Anita Taha"
   - title: "Adversarial Red Teaming for Multi-Agent Systems"
     team: "Homa Hosseinmardi, Amir Ghasemian, Sanchit Kabra"
 ---

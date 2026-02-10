@@ -5,7 +5,10 @@ description: Understanding AI agents' persuasive capabilities in realistic socia
 img: assets/img/Agentic_AI.png
 importance: 2
 category: llm-studies
-related_publications:
+has_active_projects: true
+active_projects:
+  - title: "Persuasion in the Wild"
+    team: "Amir Ghasemian, Homa Hosseinmardi, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh"
 ---
 
 This project investigates how AI agents can influence human behavior through persuasive communication in realistic social and digital environments. We study the mechanisms, effectiveness, and ethical implications of AI-driven persuasion at scale.
@@ -21,7 +24,11 @@ Research focus areas include:
 - **Vulnerability assessment** of human susceptibility to AI persuasion
 - **Ethical frameworks** for responsible development of persuasive AI
 
+## Persuasion in the Wild
+
 Our work addresses critical questions about AI agency in social influence, providing empirical evidence to inform policy and design decisions for AI systems that interact with humans in persuasive contexts.
+
+**Team:** Homa Hosseinmardi, Amir Ghasemian, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

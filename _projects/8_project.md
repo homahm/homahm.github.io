@@ -8,7 +8,9 @@ category: llm-studies
 has_active_projects: true
 active_projects:
   - title: "Persuasion in the Wild"
-    team: "Amir Ghasemian, Homa Hosseinmardi, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh"
+    team: "Led by: Amir Ghasemian | Team: Homa Hosseinmardi, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh"
+  - title: "The Dynamics of Bias in Multi-Agent Decision Systems"
+    team: "Led by: Amir Ghasemian | Team: Homa Hosseinmardi, Hamed Loghmani"
 ---
 
 This project investigates how AI agents can influence human behavior through persuasive communication in realistic social and digital environments. We study the mechanisms, effectiveness, and ethical implications of AI-driven persuasion at scale.
@@ -29,6 +31,10 @@ Research focus areas include:
 Our work addresses critical questions about AI agency in social influence, providing empirical evidence to inform policy and design decisions for AI systems that interact with humans in persuasive contexts.
 
 **Led by:** Amir Ghasemian | **Team:** Homa Hosseinmardi, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh
+
+## The Dynamics of Bias in Multi-Agent Decision Systems
+
+**Led by:** Amir Ghasemian | **Team:** Homa Hosseinmardi, Hamed Loghmani
 
 ## Using Therapeutic Interactions to Improve General-Purpose LLM Safety
 

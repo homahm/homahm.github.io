@@ -126,7 +126,7 @@ function togglePublications(id) {
             {%- for ap in project.active_projects -%}
             <div class="active-project-item">
               <h6>{{ ap.title }}</h6>
-              <div class="team-members">Team: {{ ap.team }}</div>
+              <div class="team-members">{{ ap.team }}</div>
             </div>
             {%- endfor -%}
           </div>
@@ -177,7 +177,7 @@ function togglePublications(id) {
             {%- for ap in project.active_projects -%}
             <div class="active-project-item">
               <h6>{{ ap.title }}</h6>
-              <div class="team-members">Team: {{ ap.team }}</div>
+              <div class="team-members">{{ ap.team }}</div>
             </div>
             {%- endfor -%}
             {%- endif -%}

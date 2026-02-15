@@ -1,15 +1,15 @@
 ---
 layout: page
 permalink: /team.html
-title: OASIS lab
+title: OASIS Lab
 page-title: Team
-description: Online and AI Systems' Integrity & Safety
+description: Online and AI Systems' Integrity & Safety Lab
 nav: true
 nav_order: 1
 nav_rank: 1
 ---
 
-<h2>Lab News</h2>
+<h2 class="group-heading">Lab News</h2>
 <div class="lab-news-box">
 {% include lab_news.html %}
 </div>
@@ -18,7 +18,7 @@ nav_rank: 1
   .lab-news-box {
     max-height: 200px;
     overflow-y: auto;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     margin-bottom: 2rem;
     border: 1px solid var(--global-divider-color, #dee2e6);
     border-radius: 0.25rem;
@@ -65,7 +65,7 @@ nav_rank: 1
     margin:0 auto !important;
   }
   .group-container.ra .card-body{ padding:.3rem 0 0 !important; }
-  .group-container.ra .card-title{ font-size:.8rem !important; margin-bottom:.1rem !important; }
+  .group-container.ra .card-title{ font-size:.85rem !important; margin-bottom:.1rem !important; }
   .group-container.ra .card-subtitle{ font-size:.7rem !important; }
 
   /* ===== Co-founders: 2 per row, equal images with equal spacing, name only ===== */
@@ -105,7 +105,7 @@ nav_rank: 1
   }
 
   .group-container.co-founders .card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     font-weight: 600;
     color: var(--global-text-color);
@@ -139,7 +139,7 @@ nav_rank: 1
     border-radius: 0.5rem;
     text-decoration: none;
     color: var(--global-text-color);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: box-shadow 0.2s;
   }
   .collab-item:hover {
@@ -179,7 +179,7 @@ nav_rank: 1
     padding: 0.25rem 0 0;
   }
   .group-container.former-members .card-title {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-top: 0.25rem;
   }
 </style>

@@ -8,9 +8,9 @@ category: llm-studies
 has_active_projects: true
 active_projects:
   - title: "Systematic Audit of LLM Summarization"
-    team: "Homa Hosseinmardi, Pavel Savgira"
+    team: "Led by: Homa Hosseinmardi | Team: Pavel Savgira, Elisa Kriess, Amir Ghasemian"
   - title: "Safeguarding Personalization by LLM-Assisted Reranking"
-    team: "Amir Ghasemian, Homa Hosseinmardi, Upasana Dutta, Duncan Watts"
+    team: "Led by: Amir Ghasemian | Team: Homa Hosseinmardi, Upasana Dutta, Duncan Watts"
 ---
 
 This project investigates how the integration of large language models into online platforms is fundamentally reshaping the information ecosystem. We examine LLM-assisted recommender systems, content summarization, and the transparency challenges of AI-mediated information consumption.

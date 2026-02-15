@@ -23,34 +23,34 @@ nav_rank: 1
   /* default (non-special) wide cards */
   .team-card { margin-bottom: 1rem; }
 
-  /* ===== Research Assistants: compact grid, 4 per row, text under photo ===== */
-  .group-container.ra{
-    display:grid;
-    grid-template-columns:repeat(4,minmax(0,1fr));
-    gap:.75rem;
+  /* ===== Research Assistants: all 6 in one row ===== */
+  .group-container.ra .ra-grid{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:space-around;
+    gap:.5rem;
+    text-align:center;
   }
-  .group-container.ra > .group-heading{
-    grid-column:1 / -1;
-    margin-bottom:.5rem;
+  .group-container.ra .team-card{
+    margin:0 !important;
+    border:none !important;
+    background:transparent !important;
+    flex:1;
+    max-width:130px;
   }
-  .group-container.ra .team-card{ margin:0; font-size:.9rem; }
-  .group-container.ra .row.no-gutters{ display:block; }
-  .group-container.ra .col-sm-4.col-md-3,
-  .group-container.ra .team.col-sm-8.col-md-9{ width:100%; max-width:100%; }
   .group-container.ra img.card-img,
   .group-container.ra img.img-fluid{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:.5rem .5rem 0 0;
-    display:block;
+    width:90px !important;
+    height:90px !important;
+    object-fit:cover !important;
+    object-position:top !important;
+    border-radius:50% !important;
+    display:block !important;
+    margin:0 auto !important;
   }
-  .group-container.ra .card-body{ padding:.5rem .6rem .75rem; }
-  .group-container.ra .card-title{ font-size:1rem; margin-bottom:.25rem; }
-  .group-container.ra .card-subtitle{ font-size:.85rem; }
-  .group-container.ra .card-text{ font-size:.9rem; }
-  @media (max-width:991.98px){ .group-container.ra{ grid-template-columns:repeat(3,1fr); } }
-  @media (max-width:575.98px){ .group-container.ra{ grid-template-columns:repeat(2,1fr); } }
+  .group-container.ra .card-body{ padding:.3rem 0 0 !important; }
+  .group-container.ra .card-title{ font-size:.8rem !important; margin-bottom:.1rem !important; }
+  .group-container.ra .card-subtitle{ font-size:.7rem !important; }
 
   /* ===== Co-founders: 2 per row, equal images with equal spacing, name only ===== */
   .group-container.co-founders {
@@ -75,8 +75,8 @@ nav_rank: 1
 
   .group-container.co-founders img.card-img,
   .group-container.co-founders img.img-fluid {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: .5rem;
     display: block;
@@ -100,6 +100,12 @@ nav_rank: 1
       grid-template-columns: 1fr;
       gap: 2rem;
     }
+  }
+
+  /* ===== Team Members: default cards with smaller images ===== */
+  .group-container .col-sm-4.col-md-3 {
+    max-width: 20% !important;
+    flex: 0 0 20% !important;
   }
 
   /* ===== Collaborators: same style as default (wide cards) ===== */
@@ -153,6 +159,10 @@ nav_rank: 1
     {% if group == 'Former Lab Members' %}former-members{% endif %}">
     <h2 class="group-heading">{{ group }}</h2>
 
+    {% if group == 'Research Assistants' %}
+    <div class="ra-grid">
+    {% endif %}
+
     {% for member in members %}
       {% if group == 'Co-founders' %}
         <!-- Co-founders: photo + name, clickable to website -->
@@ -174,6 +184,18 @@ nav_rank: 1
             </div>
           </div>
         </a>
+      {% elsif group == 'Research Assistants' %}
+        <!-- Research Assistants: photo + name only -->
+        <div class="card team-card">
+          <img
+            src="{{ '/assets/img/team/' | append: member.profile.image | relative_url }}"
+            class="card-img img-fluid"
+            alt="{{ member.profile.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ member.profile.name }}</h5>
+          </div>
+        </div>
       {% elsif group == 'Former Lab Members' %}
         <!-- Former Lab Members: only photo + name -->
         <div class="card team-card">
@@ -226,5 +248,9 @@ nav_rank: 1
         </div>
       {% endif %}
     {% endfor %}
+
+    {% if group == 'Research Assistants' %}
+    </div>
+    {% endif %}
   </div>
 {% endfor %}

@@ -3,7 +3,7 @@ layout: about
 inline: false
 group: Team Members
 group_rank: 2
-group_order: 3
+group_order: 4
 external: True
 
 title: Josie Arbuckle

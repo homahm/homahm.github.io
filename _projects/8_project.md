@@ -28,13 +28,8 @@ Research focus areas include:
 
 Our work addresses critical questions about AI agency in social influence, providing empirical evidence to inform policy and design decisions for AI systems that interact with humans in persuasive contexts.
 
-**Team:** Homa Hosseinmardi, Amir Ghasemian, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh
+**Led by:** Amir Ghasemian | **Team:** Homa Hosseinmardi, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/persuasion_framework.png" title="AI persuasion framework" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Framework for studying agentic AI persuasion in realistic settings.
-</div>
+## Using Therapeutic Interactions to Improve General-Purpose LLM Safety
+
+**Led by:** Homa Hosseinmardi | **Team:** Amir Ghasemian, Joan Asarnow, Anita Taha

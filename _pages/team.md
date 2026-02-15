@@ -9,7 +9,23 @@ nav_order: 1
 nav_rank: 1
 ---
 
+<h2>Lab News</h2>
+<div class="lab-news-box">
+{% include lab_news.html %}
+</div>
+
 <style>
+  .lab-news-box {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--global-divider-color, #dee2e6);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+  .lab-news-box .table { margin-bottom: 0; }
+
   /* spacing between groups */
   .group-container { margin-bottom: 2rem; }
 
@@ -56,21 +72,21 @@ nav_rank: 1
   .group-container.co-founders {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 0.5rem 3rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .group-container.co-founders > .group-heading {
     grid-column: 1 / -1;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     text-align: left;
   }
 
   .group-container.co-founders .card {
     border: none;
     background: transparent;
-    padding: 1rem;
+    padding: 0.25rem;
   }
 
   .group-container.co-founders img.card-img,
@@ -84,7 +100,7 @@ nav_rank: 1
   }
 
   .group-container.co-founders .card-body {
-    padding: 1rem 1rem 1rem;
+    padding: 0.25rem 0 0;
     background: transparent;
   }
 
@@ -108,11 +124,31 @@ nav_rank: 1
     flex: 0 0 20% !important;
   }
 
-  /* ===== Collaborators: same style as default (wide cards) ===== */
-  .group-container.collaborators .group-heading {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.75rem;
-    font-weight: bold;
+  /* ===== Collaborators section ===== */
+  .collaborators-section { margin-bottom: 2rem; }
+  .collab-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+  .collab-item {
+    display: block;
+    padding: 1rem 0.5rem;
+    border: 1px solid var(--global-divider-color, #dee2e6);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    transition: box-shadow 0.2s;
+  }
+  .collab-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+  }
+  .collab-item strong { color: var(--global-theme-color, #2698BA); }
+  @media (max-width: 575.98px) {
+    .collab-grid { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* ===== Former Lab Members: 4 per row, small proportional image, name only ===== */
@@ -254,3 +290,25 @@ nav_rank: 1
     {% endif %}
   </div>
 {% endfor %}
+
+<div class="group-container collaborators-section">
+<h2 class="group-heading">Collaborators</h2>
+<div class="collab-grid">
+<a href="https://css.seas.upenn.edu/" target="_blank" class="collab-item">
+<strong>CSSLab</strong><br>
+UPenn
+</a>
+<a href="https://www.microsoft.com/en-us/research/people/davidmr/" target="_blank" class="collab-item">
+<strong>MSR</strong><br>
+NYU
+</a>
+<a href="https://www.shadirezapour.com/research-team" target="_blank" class="collab-item">
+<strong>Social NLP Lab</strong><br>
+Drexel
+</a>
+<a href="https://www.ethos-lab.org/home" target="_blank" class="collab-item">
+<strong>ETHOS Lab</strong><br>
+Drexel
+</a>
+</div>
+</div>

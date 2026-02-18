@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded UCLA Initiative to Study Hate Grant for "The Discourse of Summaries: Ideological Drift and Identity Framing in AI-mediated News."
+Awarded UCLA Initiative to Study Hate Grant for "The Discourse of Summaries: Ideological Drift and Identity Framing in AI-mediated News." Congrats to Pavel!

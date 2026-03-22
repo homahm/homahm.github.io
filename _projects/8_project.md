@@ -38,4 +38,4 @@ Our work addresses critical questions about AI agency in social influence, provi
 
 ## Using Therapeutic Interactions to Improve General-Purpose LLM Safety
 
-**Led by:** Homa Hosseinmardi | **Team:** Amir Ghasemian, Joan Asarnow, Anita Taha
+**Led by:** Homa Hosseinmardi | **Team:** Guang Yang, Amir Ghasemian, Joan Asarnow, Anita Taha

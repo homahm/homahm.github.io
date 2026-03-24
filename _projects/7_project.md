@@ -10,7 +10,7 @@ active_projects:
   - title: "Using Therapeutic Interactions to Improve General-Purpose LLM Safety"
     team: "Led by: Amir Ghasemian | Team: Guang Yang, Homa Hosseinmardi, Joan Asarnow, Anita Taha"
   - title: "Adversarial Red Teaming for Multi-Agent Systems"
-    team: "Led by: Homa Hosseinmardi | Team: Amir Ghasemian, Sanchit Kabra"
+    team: "Led by: Homa Hosseinmardi | Team: Amir Ghasemian, Guang Yang, Sanchit Kabra"
 ---
 
 This project focuses on systematically evaluating the safety, robustness, and alignment of large language models through red teaming methodologies. We develop novel techniques to probe LLM vulnerabilities and assess potential risks in real-world deployment scenarios.

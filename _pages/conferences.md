@@ -67,6 +67,8 @@ nav_order: 5
     <tr><td>CIKM</td><td>May</td><td><a href="https://cikm2025.org/">CIKM</a></td></tr>
     <tr><td>NeurIPS</td><td>May</td><td><a href="https://neurips.cc/Conferences/2025/Dates">NeurIPS</a></td></tr>
     <tr><td>AAAI</td><td>July</td><td><a href="https://aaai.org/conference/aaai/aaai-26/">AAAI</a></td></tr>
+    <tr><td>AAAI for Social Good (track)</td><td>August 1</td><td><a href="https://aaai.org/conference/aaai/aaai-26/">AAAI</a></td></tr>
+    <tr><td>AAAI AI Alignment (track)</td><td>August 1</td><td><a href="https://aaai.org/conference/aaai/aaai-26/aia-call/">AAAI</a></td></tr>
     <tr><td>WSDM</td><td>August</td><td><a href="https://wsdm-conference.org/2026/">WSDM</a></td></tr>
   </tbody>
 </table>

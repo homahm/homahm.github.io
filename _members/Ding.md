@@ -1,9 +1,9 @@
 ---
 layout: about
 inline: false
-group: Research Assistants
-group_rank: 3
-group_order: 4
+group: Former Lab Members
+group_rank: 10
+group_order: 2
 external: False
 
 title: Valérie Ding

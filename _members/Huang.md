@@ -1,9 +1,9 @@
 ---
 layout: about
 inline: false
-group: Research Assistants
-group_rank: 3
-group_order: 6
+group: Former Lab Members
+group_rank: 10
+group_order: 1
 external: True
 
 title: Ovin Huang
@@ -16,7 +16,7 @@ teaser: >
 
 profile:
     name: Ovin Huang
-    position:
+    position: University of California Davis
     align: right
     image: Huang.jpg
     role: Undergraduate Student

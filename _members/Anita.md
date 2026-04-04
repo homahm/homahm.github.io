@@ -1,8 +1,8 @@
 ---
 layout: about
 inline: false
-group: Team Members
-group_rank: 2
+group: Research Assistants
+group_rank: 3
 group_order: 7
 external: True
 

@@ -151,36 +151,21 @@ nav_rank: 1
     .collab-grid { grid-template-columns: repeat(2, 1fr); }
   }
 
-  /* ===== Former Lab Members: 4 per row, small proportional image, name only ===== */
-  .group-container.former-members {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    text-align: center;
-  }
-
-  /* Make the section header span the whole row */
-  .group-container.former-members > .group-heading {
-  grid-column: 1 / -1;
-  margin-bottom: .5rem; /* space below header */
-  text-align: left; /* left align the header */
-  }
-
-  .group-container.former-members img.card-img,
-  .group-container.former-members img.img-fluid {
-    width: 100px;   /* smaller image width */
-    height: auto;   /* scale proportionally */
-    object-fit: contain;
-    border-radius: .5rem;
-    display: block;
-    margin: 0 auto;
+  /* ===== Former Lab Members: simple list ===== */
+  .group-container.former-members .card {
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
   .group-container.former-members .card-body {
-    padding: 0.25rem 0 0;
+    padding: 0.1rem 0;
   }
   .group-container.former-members .card-title {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .group-container.former-members .card-subtitle {
     font-size: 0.85rem;
-    margin-top: 0.25rem;
   }
 </style>
 
@@ -192,7 +177,7 @@ nav_rank: 1
     {% if group == 'Research Assistants' %}ra{% endif %}
     {% if group == 'Co-founders' %}co-founders{% endif %}
     {% if group == 'Collaborators' %}collaborators{% endif %}
-    {% if group == 'Former Lab Members' %}former-members{% endif %}">
+    {% if group == 'Former Lab Members' %}former-members{% endif %}" style="{% if group == 'Former Lab Members' %}display:block{% endif %}">
     <h2 class="group-heading">{{ group }}</h2>
 
     {% if group == 'Research Assistants' %}
@@ -233,17 +218,10 @@ nav_rank: 1
           </div>
         </div>
       {% elsif group == 'Former Lab Members' %}
-        <!-- Former Lab Members: only photo + name -->
-        <div class="card team-card">
-          <img
-            src="{{ '/assets/img/team/' | append: member.profile.image | relative_url }}"
-            class="card-img img-fluid"
-            alt="{{ member.profile.name }}"
-          />
-          <div class="card-body">
-            <h5 class="card-title">{{ member.profile.name }}</h5>
-          </div>
-        </div>
+        <!-- Former Lab Members: plain text, name + affiliation on one line -->
+        <p style="margin: 0.2rem 0;">
+          {{ member.profile.name }}{% if member.profile.position %}, {{ member.profile.position }}{% endif %}
+        </p>
       {% else %}
         <!-- Default layout for other groups -->
         <div class="card team-card {% if member.inline == false %}hoverable{% endif %}">

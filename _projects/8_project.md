@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Agentic AI Persuasions
-description: Understanding AI agents' persuasive capabilities in realistic social settings
+description: Understanding AI agents' persuasive capabilities
 img: assets/img/Agentic_AI.png
 importance: 2
 category: llm-studies
 has_active_projects: true
 active_projects:
-  - title: "Persuasion in the Wild"
+  - title: "Persuasion with Agentic AI"
     team: "Led by: Amir Ghasemian | Team: Homa Hosseinmardi, Pooriya Jamie, Sikata Sengupta, Rezvaneh (Shadi) Rezapour, Aria Pessianzadeh"
   - title: "The Dynamics of Bias in Multi-Agent Decision Systems"
     team: "Led by: Amir Ghasemian | Team: Homa Hosseinmardi, Hamed Loghmani"
@@ -26,7 +26,7 @@ Research focus areas include:
 - **Vulnerability assessment** of human susceptibility to AI persuasion
 - **Ethical frameworks** for responsible development of persuasive AI
 
-## Persuasion in the Wild
+## Persuasion with Agentic AI
 
 Our work addresses critical questions about AI agency in social influence, providing empirical evidence to inform policy and design decisions for AI systems that interact with humans in persuasive contexts.
 

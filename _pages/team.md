@@ -4,7 +4,7 @@ permalink: /team.html
 title: OASIS Lab
 page-title: Team
 description: Online and AI Systems' Integrity & Safety Lab
-nav: true
+nav: false
 nav_order: 1
 nav_rank: 1
 ---

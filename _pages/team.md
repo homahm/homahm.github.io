@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /team.html
-title: OASIS Lab
+title: ""
 page-title: Team
 description: Online and AI Systems' Integrity & Safety Lab
 nav: false
